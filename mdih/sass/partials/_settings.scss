@@ -1,0 +1,75 @@
+/* --------- Start Settings --------------*/
+/* --------- Colors ---------*/
+// Font Colors
+//$linkcolor: #a62425;
+//$titleFontColor: #a62425;
+
+// Background colors: 
+
+//$bkgoundContent: #FFFFFF; // 
+//$menuBarbkg: #D14719; //
+// clinico's uses two colors... currently these
+$clinicoDark:  #006993; 
+$clinicoAccent: #78B3D0; //#97D3B6; 
+$clinicoVeryDark: #213540;
+$linkcolor: #006993;
+$mdiDarkBlue: #006993; 
+$mdiAccentGreen: #97D3B6; 
+
+
+/* ---------Typography ---------- */
+h3.mdih-box_title { // 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mdih-addon {
+	color: $clinicoDark;
+	text-size: 90%;
+	padding: 0 15px;
+	font-style: italic;
+}
+.page-content {
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+		//font-weight: bold;
+		color: #373737;
+	}
+	h4 {
+		//font-size: 21px;
+		font-size: 24px;
+		color: #373737;
+		border-left: 3px solid $mdiDarkBlue;
+		padding-left: 7px;
+	}
+	h5 {
+		font-size: 21px;
+		color: $mdiDarkBlue;
+	}
+	h6 {
+		font-size: 18px;
+	}
+	p {
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	ul {
+		margin-bottom: 10px;
+	}
+	blockquote {
+		text-align: initial;
+		color: $mdiDarkBlue;
+	}
+	main {
+		p {
+			font-size: 16px;
+		}
+		.cws-widget ul>li>a {
+			color: $linkcolor;
+		}
+	}
+}
+
+/* --------- End  Settings --------------*/

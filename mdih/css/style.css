@@ -1,0 +1,346 @@
+/*
+Theme Name: MDI Hospital
+
+Author: Reach Marketing
+Template: clinico
+Version: 1.5.0
+Tags: clean, clinic, dentist, doctor, health, healthcare, hospital, medic, medical, medicine, responsive, timetable, wellness, corporate, Events calendar, flat
+Text Domain: clinico
+*/
+/* 11May16 add styling for ea-responsive-container
+@import url('../clinico/style.css');
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/* --------- Start Settings --------------*/
+/* --------- Colors ---------*/
+/* ---------Typography ---------- */
+h3.mdih-box_title {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.mdih-addon {
+  color: #006993;
+  text-size: 90%;
+  padding: 0 15px;
+  font-style: italic; }
+
+.page-content h2 {
+  font-size: 28px; }
+.page-content h3 {
+  font-size: 24px;
+  color: #373737; }
+.page-content h4 {
+  font-size: 24px;
+  color: #373737;
+  border-left: 3px solid #006993;
+  padding-left: 7px; }
+.page-content h5 {
+  font-size: 21px;
+  color: #006993; }
+.page-content h6 {
+  font-size: 18px; }
+.page-content p {
+  margin-top: 15px;
+  margin-bottom: 10px; }
+.page-content ul {
+  margin-bottom: 10px; }
+.page-content blockquote {
+  text-align: initial;
+  color: #006993; }
+.page-content main p {
+  font-size: 16px; }
+.page-content main .cws-widget ul > li > a {
+  color: #006993; }
+
+/* --------- End  Settings --------------*/
+/* ---------- Recent Posts Extended Styling ---------------------------------------------- */
+#eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li:before {
+  content: "";
+  margin: 0px;
+  width: 0px; }
+#eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+  vertical-align: top; }
+  #eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li a.rpwe-img img {
+    width: 100%; }
+  #eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li a.rpwe-img img.rpwe-default-thumb {
+    display: none; }
+  #eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li h3.rpwe-title a {
+    font-size: 18px; }
+  #eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li .rpwe-summary a.more-link {
+    float: right; }
+
+/* ---------- End Recent Posts Extended styling ------------------------------------------ */
+/* --------- Contact form 7 styling --------------*/
+.wpcf7 .wpcf7-form dl dt {
+  display: inline-block;
+  text-align: right;
+  min-width: 110px;
+  margin-top: 0px;
+  font-size: 15px;
+  width: 145px; }
+.wpcf7 .wpcf7-form dl dd {
+  padding-left: 10px;
+  display: inline-block;
+  min-width: 50%; }
+  .wpcf7 .wpcf7-form dl dd .your-message {
+    margin-top: 1px; }
+  .wpcf7 .wpcf7-form dl dd h6 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: initial;
+    font-weight: bold;
+    font-size: 1.1em; }
+  .wpcf7 .wpcf7-form dl dd textarea {
+    height: inherit; }
+.wpcf7 .wpcf7-form dl dd.mdih-inline .wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
+  display: inline-block;
+  padding-right: 15px; }
+
+@media screen and (max-width: 767px) {
+  .wpcf7 .wpcf7-form dl dt {
+    width: 100%;
+    text-align: left; } }
+/* --------- End Contact form 7  --------------*/
+/* ---------- WP-Jobs Styling ---------------------------------------------- */
+.page-content main div.job_listings ul.job_types li:before, .page-content main div.job_listings ul.job_listings li:before, .page-content main div.job_listings .job_description ul li:before, .page-content main div.job_listings ul.chosen-results li:before,
+.page-content main div.single_job_listing ul.job_types li:before,
+.page-content main div.single_job_listing ul.job_listings li:before,
+.page-content main div.single_job_listing .job_description ul li:before,
+.page-content main div.single_job_listing ul.chosen-results li:before {
+  content: "";
+  margin: 0px;
+  width: 0px; }
+
+/* ---------- End WP-Jobs styling ------------------------------------------ */
+/* header styling */
+.logo {
+  padding-top: 18px; }
+
+.home .toggle_sidebar .switcher {
+  background-color: #006993; }
+
+.main-menu .menu-item.giving-heart > a {
+  background-image: url(/wp-content/themes/mdih/images/give-heart.png);
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+/* moved to media.scss - .home .toggle_sidebar .switcher {
+	font-size: 14px;
+	padding-bottom: 10px;
+	background-color: $mdiDarkBlue;
+}
+.home .toggle_sidebar .switcher:after {
+
+	border-top-color: $mdiDarkBlue;
+	border-left-width: 69px;
+} */
+img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
+  border: 0px;
+  padding: 0px; }
+
+.testimonial img {
+  border: 0px;
+  padding: 0px; }
+
+.grid-row + .grid-row {
+  margin-top: 20px; }
+
+.services .service_row:before {
+  background: none; }
+
+.services .service_row {
+  margin-top: 8px;
+  padding-left: 5px; }
+
+.services .col_title {
+  text-decoration: underline;
+  padding-top: 10px; }
+
+.accordion_section:nth-child(odd) .details a.eai-more {
+  background-color: #78b3d0; }
+
+.grid-row.zpage-bottom-blog {
+  margin-top: 0px; }
+
+.synved-social-container.synved-social-container-share {
+  padding-left: 5px;
+  padding-right: 10px; }
+
+.news.blog-post .synved-social-container.synved-social-container-share a {
+  padding-top: 10px; }
+
+.synved-social-container.synved-social-container-share + div {
+  clear: both; }
+
+.cws-widget.eai-menu .menu li > a::before {
+  content: "\f178"; }
+
+.mdih-widget-map250 {
+  height: 300px; }
+
+.mdih-widget_topclose {
+  margin-top: 10px !important;
+  clear: both; }
+
+.mdih-topsome {
+  padding-top: 30px; }
+
+.mdih-widget-social ul.mdih-social-list li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  border-top: 0px;
+  border-bottom: 0px; }
+  .mdih-widget-social ul.mdih-social-list li a:before {
+    content: ""; }
+  .mdih-widget-social ul.mdih-social-list li a {
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 0px; }
+.mdih-widget-social ul.mdih-social-list:after {
+  clear: both; }
+
+.our_team.news-pinterest.news--1 .team_member_info .name {
+  height: 46px; }
+
+.mdih-widget_across ul li {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  padding-left: 0px !important;
+  margin-top: 0px !important; }
+  .mdih-widget_across ul li .rpwe-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px; }
+.mdih-widget_across ul li:before {
+  content: "" !important; }
+.mdih-widget_across .post-list .time-post {
+  text-align: left; }
+.mdih-widget_across .post-list li + li {
+  margin-top: 0px; }
+
+footer.page_footer {
+  border-top: 10px solid #213540;
+  background-color: #006993; }
+  footer.page_footer .footer_part {
+    padding-top: 10px;
+    padding-bottom: 0px; }
+    footer.page_footer .footer_part .footer_sidebar_area {
+      color: white; }
+      footer.page_footer .footer_part .footer_sidebar_area a:hover {
+        color: #78b3d0; }
+      footer.page_footer .footer_part .footer_sidebar_area .cws-widget:not(.widget-last) {
+        padding-right: 20px; }
+      footer.page_footer .footer_part .footer_sidebar_area .social-icons .icon {
+        margin-left: 0px; }
+        footer.page_footer .footer_part .footer_sidebar_area .social-icons .icon i {
+          border: 1px solid white;
+          font-size: 25px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px; }
+
+.mdih-nobottom {
+  margin-bottom: 0px; }
+
+.mdih-lilbottom {
+  margin-bottom: 10px; }
+
+.mdih-liltop, .page-content main p.mdih-liltop {
+  margin-top: 10px; }
+
+.mdih-notop, .page-content main p.mdih-notop {
+  margin-top: 0px; }
+
+a.eai-more {
+  margin-top: 5px;
+  float: right;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #006993; }
+
+a.eai-moreptr {
+  float: right; }
+
+.mdih-staff {
+  text-align: center; }
+  .mdih-staff .wrapper img {
+    vertical-align: bottom; }
+  .mdih-staff .team_member_info {
+    border-bottom-color: #006993; }
+
+.mdih-staff:hover .team_member_info {
+  background-color: #006993; }
+  .mdih-staff:hover .team_member_info .name, .mdih-staff:hover .team_member_info .positions {
+    color: #FFFFFF; }
+
+.page-content main ul.doc-icon > li:before {
+  content: "\F0F0"; }
+
+.news.blog-post:not(.staff) .item .wrapper {
+  width: 50%; }
+
+.blog-post.staff .item .wrapper {
+  padding-left: 10px;
+  background-color: #006993; }
+
+dl.eai-edu {
+  padding-left: 18px; }
+  dl.eai-edu dt, dl.eai-edu dd {
+    display: inline;
+    font-size: 12px; }
+  dl.eai-edu dt:before {
+    content: "";
+    display: block; }
+  dl.eai-edu dt {
+    font-weight: 700;
+    text-transform: capitalize; }
+  dl.eai-edu dd {
+    padding-left: 5px; }
+
+.wpmenucart-contents .wpmenucart-icon-shopping-cart-5:before {
+  font-size: 500%; }
+
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .ea-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* ---------- Media Styling ---------------------------------------------- */
+/* clinico breaks // layout
+@media screen and (max-width: 1190px
+@media screen and (max-width: 980px)
+@media screen and (max-width: 767px)
+*/
+@media screen and (max-width: 767px) {
+  .news.blog-post .item .wrapper {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  .home .toggle_sidebar .switcher {
+    font-size: 14px;
+    padding-bottom: 10px;
+    background-color: #006993; }
+
+  .home .toggle_sidebar .switcher:after {
+    border-top-color: #006993;
+    -moz-border-top-colors: #006993; } }
+/* ---------- End Media styling ------------------------------------------ */

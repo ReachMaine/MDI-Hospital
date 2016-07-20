@@ -1,0 +1,297 @@
+/*
+Theme Name: MDI Hospital
+
+Author: Reach Marketing
+Template: clinico
+Version: 1.5.0
+Tags: clean, clinic, dentist, doctor, health, healthcare, hospital, medic, medical, medicine, responsive, timetable, wellness, corporate, Events calendar, flat
+Text Domain: clinico
+*/ 
+/* 11May16 add styling for ea-responsive-container
+@import url('../clinico/style.css');
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+@import "partials/settings";
+@import "partials/recent_posts_extended";
+@import "partials/cf7";
+@import "partials/jobs";
+/* header styling */
+.logo {
+	padding-top: 18px;
+}
+.home .toggle_sidebar .switcher {
+	background-color: $mdiDarkBlue;
+}
+
+// main menu 
+.main-menu .menu-item.giving-heart {
+	
+}
+
+.main-menu .menu-item.giving-heart> a {
+	background-image: url(/wp-content/themes/mdih/images/give-heart.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+
+/* moved to media.scss - .home .toggle_sidebar .switcher {
+	font-size: 14px;
+	padding-bottom: 10px;
+	background-color: $mdiDarkBlue;
+}
+.home .toggle_sidebar .switcher:after {
+
+	border-top-color: $mdiDarkBlue;
+	border-left-width: 69px;
+} */
+// 
+img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borders on images
+	border: 0px;
+	padding:0px;
+}
+
+.testimonial img {
+	border:0px;
+	padding: 0px;
+}
+.grid-row + .grid-row {
+	margin-top: 20px;
+}
+.services .service_row:before {
+	background: none;
+}
+.services .service_row {
+	margin-top: 8px;
+	padding-left: 5px;
+}
+.services .col_title {
+	text-decoration: underline;
+	padding-top: 10px;
+}
+.accordion_section:nth-child(odd) .details a.eai-more {
+	background-color: $clinicoAccent;
+}
+.grid-row.zpage-bottom-blog {
+	margin-top: 0px;
+}
+// social icons at top of page & post 
+
+.synved-social-container.synved-social-container-share {
+	padding-left: 5px;
+	padding-right: 10px;
+}
+.news.blog-post .synved-social-container.synved-social-container-share a {
+	padding-top: 10px;
+}
+//.synved-social-container.synved-social-container-share + blockquote 
+.synved-social-container.synved-social-container-share + div {
+	clear: both; // clear both after floated social icons right.
+}
+.cws-widget.eai-menu .menu li>a::before {
+	content: "\f178";
+}
+.mdih-widget-map250 { // map of 250 height
+	height: 300px;
+}
+.mdih-widget_topclose { // sidebar widget close up top margin
+	margin-top: 10px!important;
+	clear: both;
+}
+.mdih-topsome {
+	padding-top: 30px;
+}
+.mdih-widget-social {
+	ul.mdih-social-list {
+		li {
+			display: inline-block;
+ 			float: left;
+  			width: 25%;
+  			border-top: 0px;
+  			border-bottom: 0px;
+  			a:before {
+  				content: "";
+  			}
+  			a {
+  				width: 100%;
+  				padding-left: 3px;
+  				padding-right: 0px;
+  			}
+		}
+	}
+	ul.mdih-social-list:after {
+		clear:both;
+	}
+}
+.our_team.news-pinterest.news--1 .team_member_info .name {
+	height: 46px; // zig 20jul15
+}
+.mdih-widget_across { // styling for displaying widget across the page (and not down the sidebar)
+					 // used for babies on bottom of home page.
+	ul {
+		li {
+			width: 25%;
+			display: inline-block;
+			float: left;
+			padding-left: 0px!important;
+			margin-top: 0px!important;
+			.rpwe-title {
+				text-transform: uppercase;
+				font-size: 14px;
+				line-height: 21px;
+			}
+		}
+		li:before {
+			content: ""!important;
+		}
+	}
+	.post-list .time-post {
+		text-align: left;
+	}
+
+	.post-list li + li {
+		margin-top: 0px;
+	}
+
+
+}
+footer.page_footer {
+	border-top: 10px solid $clinicoVeryDark;
+	background-color: $mdiDarkBlue;
+	.footer_part {
+		padding-top: 10px;
+		padding-bottom: 0px;
+		.footer_sidebar_area {
+			color: white;
+			a:hover {
+				color: $clinicoAccent;
+			}
+			.cws-widget:not(.widget-last) {
+				padding-right: 20px;
+			}
+
+			.social-icons {
+				//text-align: right;
+				.icon {
+					margin-left: 0px;
+					i {
+						border: 1px solid white;
+						font-size: 25px;
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+.mdih-nobottom {
+	margin-bottom: 0px;
+}
+.mdih-lilbottom {
+	margin-bottom: 10px;
+}
+.mdih-liltop,  .page-content main p.mdih-liltop {
+	margin-top: 10px;
+}
+.mdih-notop, .page-content main p.mdih-notop {
+	margin-top: 0px;
+}
+a.eai-more {
+	margin-top: 5px;
+	float: right;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	color: white;	
+	background-color: $clinicoDark;
+}
+a.eai-moreptr {
+	float: right;
+}
+// staff stuff
+.pic .zhover-effect { // staff shortcode
+
+}
+
+// staff shortcode zig wrote.
+.mdih-staff {
+	text-align: center;
+	.wrapper img {
+		vertical-align: bottom;
+	}
+	.team_member_info {
+		border-bottom-color: $mdiDarkBlue;
+	}
+}
+.mdih-staff:hover {
+	.team_member_info {
+		background-color: $mdiDarkBlue;
+		.name, .positions {
+			color: #FFFFFF;
+		}
+	}
+}
+// end staff....
+.page-content main ul.doc-icon>li:before {
+	content:"\F0F0";
+}
+.news.blog-post:not(.staff) {
+	.item .wrapper {
+		width: 50%; // make featured image 50% of screen (mobile styling different)
+	}
+	
+}
+.blog-post.staff .item { // single staff
+	.wrapper { // image wrapper
+		padding-left: 10px;
+		background-color: $mdiDarkBlue;
+	}
+}
+dl.eai-edu { // dl on single staff 
+	padding-left: 18px;
+	dt, dd {	
+		display: inline;
+		font-size: 12px;
+	}
+	dt:before {
+		content: "";
+		display: block;
+	}
+	dt {
+		font-weight: 700;
+ 	 	text-transform: capitalize;
+	}
+
+	dd {
+		padding-left: 5px;
+	}
+}
+
+.wpmenucart-contents {
+	.wpmenucart-icon-shopping-cart-5:before {
+		font-size: 500%;
+	}	
+}
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+	position: relative;
+	padding-bottom: 50.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 1em;
+	iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	}
+}
+@import "partials/media";  // should be last s.t. it over-writes above settings.
+

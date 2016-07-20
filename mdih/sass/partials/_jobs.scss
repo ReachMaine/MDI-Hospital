@@ -1,0 +1,15 @@
+/* ---------- WP-Jobs Styling ---------------------------------------------- */
+// 
+.page-content main div.job_listings,
+.page-content main div.single_job_listing {
+	ul.job_types, ul.job_listings, .job_description ul, ul.chosen-results {
+		li:before  {
+			content: "";
+			margin: 0px;
+			width: 0px;
+		}
+
+	}
+} 
+
+/* ---------- End WP-Jobs styling ------------------------------------------ */

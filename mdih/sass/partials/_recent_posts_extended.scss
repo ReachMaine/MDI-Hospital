@@ -1,0 +1,42 @@
+/* ---------- Recent Posts Extended Styling ---------------------------------------------- */
+// styling for 4 inline block recent posts
+#eai-rpe-inline4.rpwe-block {
+	ul.rpwe-ul {
+		li.rpwe-li:before {
+			content: "";
+			margin: 0px;
+			width: 0px;
+		}
+		li.rpwe-li {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			display: inline-block;
+			//width: 23%;
+			//padding-left:1%;
+			//padding-right:1%;
+			vertical-align: top;
+			a.rpwe-img {
+				img {
+					width: 100%;
+				}
+				img.rpwe-default-thumb {
+					display: none;
+				}
+			}
+			h3.rpwe-title {
+				a {
+					font-size: 18px;
+				}
+	
+			}
+			.rpwe-summary {
+				a.more-link {
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+
+/* ---------- End Recent Posts Extended styling ------------------------------------------ */
