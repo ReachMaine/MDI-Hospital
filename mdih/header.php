@@ -4,6 +4,7 @@
 <?php /* 
 	zig 1Sept15 - add GTM call.
 	28Apr16 zig - add WLZB one pixel image after body tag.  per Oka instructions - 
+	27July16 zig - change WLZB image.
 */ ?>
 <html class="not-ie no-js" xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
@@ -34,7 +35,9 @@
 	</head>
 	<body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
-	<img src="https://b.collective-media.net/seg/cm/5iso" width="1" height="1" />
+	<!-- advertising pixels -->
+	<img src="https://t.visto1.net/e?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFace88">
+	<img src="https://t.visto1.net/rt?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFaceso">
 	<?php
 		if ($post) {
 			$meta = get_post_meta($post->ID,'cws-mb');
