@@ -98,6 +98,8 @@ h3.mdih-box_title {
 .wpcf7 .wpcf7-form dl dd.mdih-inline .wpcf7-form-control-wrap .wpcf7-form-control.wpcf7-radio .wpcf7-list-item {
   display: inline-block;
   padding-right: 15px; }
+.wpcf7 .wpcf7-form input[type="checkbox"] {
+  border-color: #333; }
 
 @media screen and (max-width: 767px) {
   .wpcf7 .wpcf7-form dl dt {

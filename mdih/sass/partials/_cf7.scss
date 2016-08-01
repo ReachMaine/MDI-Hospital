@@ -40,6 +40,9 @@
 				}
 			}
 		} // end dl
+		input[type="checkbox"] {
+			border-color: #333;
+		}
 	} // end form
 }
 @media screen and (max-width: 767px) {//zig:  26jun15
