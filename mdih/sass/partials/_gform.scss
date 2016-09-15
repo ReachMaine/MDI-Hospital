@@ -1,0 +1,48 @@
+/* gravity forms styling */
+.gform_page_fields {
+	h2.gsection_title {
+
+	}
+	h5 {
+		margin: .5em 0;
+	}
+	hr {
+		margin-bottom: 20px;
+	}
+}
+.gform_page_footer {
+	padding-right: 16px; // for some reason there is padding on last page (before)
+	input[type=submit], 
+	.gform_button,
+	.gform_previous_button,
+	.gform_next_button { // make next & previous & Submit look like buttons on the site.
+	    padding: 11px 21px;
+	    border-width: 3px;
+	    border-style: solid;
+	    font-size: 14px;
+	    line-height: 22px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    cursor: pointer;
+	   
+	}.gform_previous_button, // next & previous buttons differenct color.
+	.gform_next_button {
+		color: #fff;
+		padding: 8px 16px;
+		background-color: $mdiAccentGreen; // med green in logo
+	    border-color: $mdiDarkBlue;
+	}
+
+	.gform_next_button { // just the next button
+		float: right;
+	}
+
+	.gform_previous_button:hover,
+	.gform_next_button:hover {
+		color: $mdiAccentGreen;
+		background-color: #fff;
+	}
+	.gform_button:hover {
+		color: $mdiDarkBlue;
+	}
+}

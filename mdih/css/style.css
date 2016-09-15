@@ -117,6 +117,41 @@ h3.mdih-box_title {
   width: 0px; }
 
 /* ---------- End WP-Jobs styling ------------------------------------------ */
+/* gravity forms styling */
+.gform_page_fields h5 {
+  margin: .5em 0; }
+.gform_page_fields hr {
+  margin-bottom: 20px; }
+
+.gform_page_footer {
+  padding-right: 16px; }
+  .gform_page_footer input[type=submit],
+  .gform_page_footer .gform_button,
+  .gform_page_footer .gform_previous_button,
+  .gform_page_footer .gform_next_button {
+    padding: 11px 21px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer; }
+  .gform_page_footer .gform_previous_button,
+  .gform_page_footer .gform_next_button {
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #97d3b6;
+    border-color: #006993; }
+  .gform_page_footer .gform_next_button {
+    float: right; }
+  .gform_page_footer .gform_previous_button:hover,
+  .gform_page_footer .gform_next_button:hover {
+    color: #97d3b6;
+    background-color: #fff; }
+  .gform_page_footer .gform_button:hover {
+    color: #006993; }
+
 /* header styling */
 .logo {
   padding-top: 18px; }
