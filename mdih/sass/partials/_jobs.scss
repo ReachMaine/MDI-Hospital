@@ -2,6 +2,7 @@
 // 
 .page-content main div.job_listings,
 .page-content main div.single_job_listing {
+	
 	ul.job_types, ul.job_listings, .job_description ul, ul.chosen-results {
 		li:before  {
 			content: "";
@@ -11,5 +12,10 @@
 
 	}
 } 
-
+.page-content main div.single_job_listing .job_description {
+	ul li {
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
 /* ---------- End WP-Jobs styling ------------------------------------------ */

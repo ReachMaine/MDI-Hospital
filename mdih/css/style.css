@@ -47,7 +47,7 @@ h3.mdih-box_title {
 .page-content blockquote {
   text-align: initial;
   color: #006993; }
-.page-content main p {
+.page-content main p, .page-content main ul, .page-content main ul li {
   font-size: 16px; }
 .page-content main .cws-widget ul > li > a {
   color: #006993; }
@@ -115,6 +115,10 @@ h3.mdih-box_title {
   content: "";
   margin: 0px;
   width: 0px; }
+
+.page-content main div.single_job_listing .job_description ul li {
+  list-style-type: disc;
+  list-style-position: inside; }
 
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
