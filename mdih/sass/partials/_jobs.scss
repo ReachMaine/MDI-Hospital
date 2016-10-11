@@ -1,5 +1,5 @@
 /* ---------- WP-Jobs Styling ---------------------------------------------- */
-// 
+// both list & singles
 .page-content main div.job_listings,
 .page-content main div.single_job_listing {
 	
@@ -12,6 +12,13 @@
 
 	}
 } 
+// lists of jobs
+.page-content main div.job_listings {
+	ul.jobs_listings {
+		border-top: 1px solid $mdiDarkBlue;
+	}
+
+}
 .page-content main div.single_job_listing .job_description {
 	ul li {
 		list-style-type: disc;
