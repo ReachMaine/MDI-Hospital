@@ -125,6 +125,10 @@ h3.mdih-box_title {
 
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
+.gf_page_steps .gf_step_active span.gf_step_label {
+  border-bottom: 2px solid #78b3d0;
+  font-size: larger; }
+
 .gform_page_fields h5 {
   margin: .5em 0; }
 .gform_page_fields hr {

@@ -1,4 +1,10 @@
 /* gravity forms styling */
+.gf_page_steps .gf_step_active {
+	span.gf_step_label {
+		border-bottom: 2px solid $clinicoAccent;
+		font-size: larger;
+	}
+}
 .gform_page_fields {
 	h2.gsection_title {
 
@@ -12,7 +18,7 @@
 }
 .gform_page_footer {
 	padding-right: 16px; // for some reason there is padding on last page (before)
-	input[type=submit], 
+	input[type=submit],
 	.gform_button,
 	.gform_previous_button,
 	.gform_next_button { // make next & previous & Submit look like buttons on the site.
@@ -24,7 +30,7 @@
 	    text-align: center;
 	    text-transform: uppercase;
 	    cursor: pointer;
-	   
+
 	}.gform_previous_button, // next & previous buttons differenct color.
 	.gform_next_button {
 		color: #fff;
