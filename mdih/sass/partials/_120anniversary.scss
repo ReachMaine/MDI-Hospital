@@ -1,7 +1,13 @@
 /* styling for 120th Anniversary page template */
-.page.page-template-page-120 {
+.page.page-template-page-120 { // body class
+    .MDIH-120th-header {
+        margin-bottom: 20px;
+    }
     .page-content.page-120th {
-        margin-top: 0px!important;
+        //margin-top: 0px!important;
+    }
+    .MDIH-120th-footer {
+        margin-top: 20px;
     }
     .page_footer {
         margin-top: 0px!important;

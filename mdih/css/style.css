@@ -164,8 +164,10 @@ h3.mdih-box_title {
     color: #006993; }
 
 /* styling for 120th Anniversary page template */
-.page.page-template-page-120 .page-content.page-120th {
-  margin-top: 0px !important; }
+.page.page-template-page-120 .MDIH-120th-header {
+  margin-bottom: 20px; }
+.page.page-template-page-120 .MDIH-120th-footer {
+  margin-top: 20px; }
 .page.page-template-page-120 .page_footer {
   margin-top: 0px !important; }
 

@@ -22,8 +22,8 @@
 	$sb_block = $sb['sidebar_pos'];
 	$class_container = 'page-content page-120th' . (cws_has_sidebar_pos($sb_block) ? ( 'both' == $sb_block ? ' double-sidebar' : ' single-sidebar' ) : '');
 	?>
-	<div class="<?php echo $class_container; ?>">
-		<?php /* 120th Anniversery header here */ ?>
+	<?php /* 120th Anniversery header here */ ?>
+	<div class="MDIH-120th-header">
 		<div class="grid-row clearfix">
 			<div class="grid-col grid-col-12">
 				<section class="cws-widget">
@@ -33,7 +33,9 @@
 				</section>
 			</div>
 		</div>
-		<?php /* end anniversary header */ ?>
+	</div>
+	<?php /* end anniversary header */ ?>
+	<div class="<?php echo $class_container; ?>">	
 		<div class="container">
 		<?php
 			if (cws_has_sidebar_pos($sb_block)) {
@@ -65,13 +67,15 @@
 		</div>
 	</div>
 <?php /* 120th Anniversary footer here */ ?>
-<div class="grid-row clearfix">
-	<div class="grid-col grid-col-12">
-		<section class="cws-widget">
-			<section class="cws_widget_content">
-				<div style="background-image: url('//www.mdihospital.org/wp-content/uploads/2017/01/footer-background.jpg'); height: 50px;">&nbsp;</div>
+<div class="MDIH-120th-footer">
+	<div class="grid-row clearfix">
+		<div class="grid-col grid-col-12">
+			<section class="cws-widget">
+				<section class="cws_widget_content">
+					<div style="background-image: url('//www.mdihospital.org/wp-content/uploads/2017/01/footer-background.jpg'); height: 50px;">&nbsp;</div>
+				</section>
 			</section>
-		</section>
+		</div>
 	</div>
 </div>
 <?php get_footer(); ?>
