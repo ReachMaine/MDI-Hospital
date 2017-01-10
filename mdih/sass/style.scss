@@ -6,7 +6,7 @@ Template: clinico
 Version: 1.5.0
 Tags: clean, clinic, dentist, doctor, health, healthcare, hospital, medic, medical, medicine, responsive, timetable, wellness, corporate, Events calendar, flat
 Text Domain: clinico
-*/ 
+*/
 /* 11May16 add styling for ea-responsive-container
 @import url('../clinico/style.css');
 /* =Theme customization starts here
@@ -16,6 +16,7 @@ Text Domain: clinico
 @import "partials/cf7";
 @import "partials/jobs";
 @import "partials/gform";
+@import "partials/120anniversary";
 /* header styling */
 .logo {
 	padding-top: 18px;
@@ -24,9 +25,9 @@ Text Domain: clinico
 	background-color: $mdiDarkBlue;
 }
 
-// main menu 
+// main menu
 .main-menu .menu-item.giving-heart {
-	
+
 }
 
 .main-menu .menu-item.giving-heart> a {
@@ -46,7 +47,7 @@ Text Domain: clinico
 	border-top-color: $mdiDarkBlue;
 	border-left-width: 69px;
 } */
-// 
+//
 img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borders on images
 	border: 0px;
 	padding:0px;
@@ -76,7 +77,7 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 .grid-row.zpage-bottom-blog {
 	margin-top: 0px;
 }
-// social icons at top of page & post 
+// social icons at top of page & post
 
 .synved-social-container.synved-social-container-share {
 	padding-left: 5px;
@@ -85,7 +86,7 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 .news.blog-post .synved-social-container.synved-social-container-share a {
 	padding-top: 10px;
 }
-//.synved-social-container.synved-social-container-share + blockquote 
+//.synved-social-container.synved-social-container-share + blockquote
 .synved-social-container.synved-social-container-share + div {
 	clear: both; // clear both after floated social icons right.
 }
@@ -208,7 +209,7 @@ a.eai-more {
 	font-size: 14px;
 	line-height: 40px;
 	text-align: center;
-	color: white;	
+	color: white;
 	background-color: $clinicoDark;
 }
 a.eai-moreptr {
@@ -245,7 +246,7 @@ a.eai-moreptr {
 	.item .wrapper {
 		width: 50%; // make featured image 50% of screen (mobile styling different)
 	}
-	
+
 }
 .blog-post.staff .item { // single staff
 	.wrapper { // image wrapper
@@ -253,9 +254,9 @@ a.eai-moreptr {
 		background-color: $mdiDarkBlue;
 	}
 }
-dl.eai-edu { // dl on single staff 
+dl.eai-edu { // dl on single staff
 	padding-left: 18px;
-	dt, dd {	
+	dt, dd {
 		display: inline;
 		font-size: 12px;
 	}
@@ -276,7 +277,7 @@ dl.eai-edu { // dl on single staff
 .wpmenucart-contents {
 	.wpmenucart-icon-shopping-cart-5:before {
 		font-size: 500%;
-	}	
+	}
 }
 /* responsive video embed zig 10May16 */
 .ea-responsive-container {
@@ -295,4 +296,3 @@ dl.eai-edu { // dl on single staff
 	}
 }
 @import "partials/media";  // should be last s.t. it over-writes above settings.
-
