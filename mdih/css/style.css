@@ -126,7 +126,7 @@ h3.mdih-box_title {
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
 .gf_page_steps .gf_step_active span.gf_step_label {
-  border-bottom: 2px solid #78b3d0;
+  border-bottom: 2px solid #78B3D0;
   font-size: larger; }
 
 .gform_page_fields h5 {
@@ -152,22 +152,29 @@ h3.mdih-box_title {
   .gform_page_footer .gform_next_button {
     color: #fff;
     padding: 8px 16px;
-    background-color: #97d3b6;
+    background-color: #97D3B6;
     border-color: #006993; }
   .gform_page_footer .gform_next_button {
     float: right; }
   .gform_page_footer .gform_previous_button:hover,
   .gform_page_footer .gform_next_button:hover {
-    color: #97d3b6;
+    color: #97D3B6;
     background-color: #fff; }
   .gform_page_footer .gform_button:hover {
     color: #006993; }
 
 /* styling for 120th Anniversary page template */
 .page.page-template-page-120 .page-content.page-120th {
-  margin-top: 0px !important; }
+  margin-top: 15px !important; }
 .page.page-template-page-120 .page_footer {
   margin-top: 0px !important; }
+
+.mdih-120th-nav .cws_widget_content {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.MDIH-120th-footer {
+  margin-top: 15px; }
 
 /* header styling */
 .logo {
@@ -214,7 +221,7 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
   padding-top: 10px; }
 
 .accordion_section:nth-child(odd) .details a.eai-more {
-  background-color: #78b3d0; }
+  background-color: #78B3D0; }
 
 .grid-row.zpage-bottom-blog {
   margin-top: 0px; }
@@ -286,7 +293,7 @@ footer.page_footer {
     footer.page_footer .footer_part .footer_sidebar_area {
       color: white; }
       footer.page_footer .footer_part .footer_sidebar_area a:hover {
-        color: #78b3d0; }
+        color: #78B3D0; }
       footer.page_footer .footer_part .footer_sidebar_area .cws-widget:not(.widget-last) {
         padding-right: 20px; }
       footer.page_footer .footer_part .footer_sidebar_area .social-icons .icon {
