@@ -86,6 +86,14 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 .news.blog-post .synved-social-container.synved-social-container-share a {
 	padding-top: 10px;
 }
+//pages to hide social share icons on
+.page-id-7676, .page-id-7645 {
+	.synved-social-container.synved-social-container-share {
+		display: none;
+	}
+}
+
+
 //.synved-social-container.synved-social-container-share + blockquote
 .synved-social-container.synved-social-container-share + div {
 	clear: both; // clear both after floated social icons right.

@@ -36,7 +36,8 @@ h3.mdih-box_title {
   padding-left: 7px; }
 .page-content h5 {
   font-size: 21px;
-  color: #006993; }
+  color: #006993;
+  margin: 1.67em 0 .67em 0; }
 .page-content h6 {
   font-size: 18px; }
 .page-content p {
@@ -163,6 +164,12 @@ h3.mdih-box_title {
   .gform_page_footer .gform_button:hover {
     color: #006993; }
 
+div#gform_confirmation_message_3 {
+  font-size: 1.2em; }
+
+label {
+  font-size: 1em !important; }
+
 /* styling for 120th Anniversary page template */
 .page.page-template-page-120 .page-content.page-120th {
   margin-top: 15px !important; }
@@ -232,6 +239,9 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 
 .news.blog-post .synved-social-container.synved-social-container-share a {
   padding-top: 10px; }
+
+.page-id-7676 .synved-social-container.synved-social-container-share, .page-id-7645 .synved-social-container.synved-social-container-share {
+  display: none; }
 
 .synved-social-container.synved-social-container-share + div {
   clear: both; }
