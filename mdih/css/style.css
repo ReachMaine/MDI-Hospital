@@ -36,7 +36,8 @@ h3.mdih-box_title {
   padding-left: 7px; }
 .page-content h5 {
   font-size: 21px;
-  color: #006993; }
+  color: #006993;
+  margin: 1.67em 0 .67em 0; }
 .page-content h6 {
   font-size: 18px; }
 .page-content p {
@@ -126,7 +127,7 @@ h3.mdih-box_title {
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
 .gf_page_steps .gf_step_active span.gf_step_label {
-  border-bottom: 2px solid #78b3d0;
+  border-bottom: 2px solid #78B3D0;
   font-size: larger; }
 
 .gform_page_fields h5 {
@@ -152,24 +153,39 @@ h3.mdih-box_title {
   .gform_page_footer .gform_next_button {
     color: #fff;
     padding: 8px 16px;
-    background-color: #97d3b6;
+    background-color: #97D3B6;
     border-color: #006993; }
   .gform_page_footer .gform_next_button {
     float: right; }
   .gform_page_footer .gform_previous_button:hover,
   .gform_page_footer .gform_next_button:hover {
-    color: #97d3b6;
+    color: #97D3B6;
     background-color: #fff; }
   .gform_page_footer .gform_button:hover {
     color: #006993; }
+
+div#gform_confirmation_message_3 {
+  font-size: 1.2em; }
+
+label {
+  font-size: 1em !important; }
 
 /* styling for 120th Anniversary page template */
 .page.page-template-page-120 .MDIH-120th-header {
   margin-bottom: 20px; }
 .page.page-template-page-120 .MDIH-120th-footer {
-  margin-top: 20px; }
+  margin-top: 15px !important; }
 .page.page-template-page-120 .page_footer {
   margin-top: 0px !important; }
+.page.page-template-page-120 .tabs .tab {
+  text-transform: none; }
+
+.mdih-120th-nav .cws_widget_content {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.MDIH-120th-footer {
+  margin-top: 15px; }
 
 /* header styling */
 .logo {
@@ -216,7 +232,7 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
   padding-top: 10px; }
 
 .accordion_section:nth-child(odd) .details a.eai-more {
-  background-color: #78b3d0; }
+  background-color: #78B3D0; }
 
 .grid-row.zpage-bottom-blog {
   margin-top: 0px; }
@@ -227,6 +243,9 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 
 .news.blog-post .synved-social-container.synved-social-container-share a {
   padding-top: 10px; }
+
+.page-id-7676 .synved-social-container.synved-social-container-share, .page-id-7645 .synved-social-container.synved-social-container-share {
+  display: none; }
 
 .synved-social-container.synved-social-container-share + div {
   clear: both; }
@@ -288,7 +307,7 @@ footer.page_footer {
     footer.page_footer .footer_part .footer_sidebar_area {
       color: white; }
       footer.page_footer .footer_part .footer_sidebar_area a:hover {
-        color: #78b3d0; }
+        color: #78B3D0; }
       footer.page_footer .footer_part .footer_sidebar_area .cws-widget:not(.widget-last) {
         padding-right: 20px; }
       footer.page_footer .footer_part .footer_sidebar_area .social-icons .icon {

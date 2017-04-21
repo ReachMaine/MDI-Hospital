@@ -4,21 +4,21 @@
 //$linkcolor: #a62425;
 //$titleFontColor: #a62425;
 
-// Background colors: 
+// Background colors:
 
-//$bkgoundContent: #FFFFFF; // 
+//$bkgoundContent: #FFFFFF; //
 //$menuBarbkg: #D14719; //
 // clinico's uses two colors... currently these
-$clinicoDark:  #006993; 
-$clinicoAccent: #78B3D0; //#97D3B6; 
+$clinicoDark:  #006993;
+$clinicoAccent: #78B3D0; //#97D3B6;
 $clinicoVeryDark: #213540;
 $linkcolor: #006993;
-$mdiDarkBlue: #006993; 
-$mdiAccentGreen: #97D3B6; 
+$mdiDarkBlue: #006993;
+$mdiAccentGreen: #97D3B6;
 
 
 /* ---------Typography ---------- */
-h3.mdih-box_title { // 
+h3.mdih-box_title { //
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -47,6 +47,7 @@ h3.mdih-box_title { //
 	h5 {
 		font-size: 21px;
 		color: $mdiDarkBlue;
+		margin: 1.67em 0 .67em 0;
 	}
 	h6 {
 		font-size: 18px;
