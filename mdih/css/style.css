@@ -194,6 +194,9 @@ label {
 .home .toggle_sidebar .switcher {
   background-color: #006993; }
 
+.main-menu .menu-item a {
+  padding: 11px 20px; }
+
 .main-menu .menu-item.giving-heart > a {
   background-image: url(/wp-content/themes/mdih/images/give-heart.png);
   background-repeat: no-repeat;
