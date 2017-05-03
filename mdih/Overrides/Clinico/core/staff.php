@@ -1,4 +1,4 @@
-<?php /* zig:  add board certificatin to staff meta 
+<?php /* zig:  add board certificatin to staff meta
 
 */ ?>
 <?php
@@ -29,7 +29,7 @@ function cws_custom_type_register() {
 		'public' => true,
 		'show_ui' => true,
 		'capability_type' => 'post',
-		'hierarchical' => true,
+		//'hierarchical' => true,
 		'has_archive' => true,
 		'rewrite' => array('slug' => $staff_slug, 'with_front' => false),
 		'supports' => array(
