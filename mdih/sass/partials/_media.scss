@@ -7,7 +7,7 @@
 @media screen and (max-width: 767px) { // mobile styling....
 	.news.blog-post { // featured image full width.
 		.item .wrapper {
-			width: 100%; 
+			width: 100%;
 		}
 	}
 
@@ -25,5 +25,11 @@
 		-moz-border-top-colors: $mdiDarkBlue;
 	}
 
+}
+
+@media screen and (min-width: 1191px) { //top margin on main menu before wrapping starts
+	nav.main-nav-container {
+		margin-top: 37px;
+	}
 }
 /* ---------- End Media styling ------------------------------------------ */
