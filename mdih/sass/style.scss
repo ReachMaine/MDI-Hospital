@@ -255,6 +255,11 @@ a.eai-moreptr {
 .page-content main ul.doc-icon>li:before {
 	content:"\F0F0";
 }
+
+.news .cats{
+	display: none;
+}
+
 .news.blog-post:not(.staff) {
 	.item .wrapper {
 		width: 50%; // make featured image 50% of screen (mobile styling different)
