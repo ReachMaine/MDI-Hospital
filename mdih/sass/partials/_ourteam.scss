@@ -1,0 +1,48 @@
+// basic layout css found here: https://docs.woocommerce.com/document/apply-layout-to-our-team/
+// for use with the per_row parameter
+
+.widget_woothemes_our_team .columns-2,
+.widget_woothemes_our_team .columns-3,
+.widget_woothemes_our_team .columns-4,
+.widget_woothemes_our_team .columns-5,
+.widget_woothemes_our_team .columns-6 {
+  overflow: hidden;
+  zoom: 1;
+}
+.widget_woothemes_our_team .columns-2 .team-member,
+.widget_woothemes_our_team .columns-3 .team-member,
+.widget_woothemes_our_team .columns-4 .team-member,
+.widget_woothemes_our_team .columns-5 .team-member,
+.widget_woothemes_our_team .columns-6 .team-member {
+  float: left;
+  margin-right: 3.8%;
+}
+.widget_woothemes_our_team .columns-2 .team-member.first,
+.widget_woothemes_our_team .columns-3 .team-member.first,
+.widget_woothemes_our_team .columns-4 .team-member.first,
+.widget_woothemes_our_team .columns-5 .team-member.first,
+.widget_woothemes_our_team .columns-6 .team-member.first {
+  clear: both;
+}
+.widget_woothemes_our_team .columns-2 .team-member.last,
+.widget_woothemes_our_team .columns-3 .team-member.last,
+.widget_woothemes_our_team .columns-4 .team-member.last,
+.widget_woothemes_our_team .columns-5 .team-member.last,
+.widget_woothemes_our_team .columns-6 .team-member.last {
+  margin-right: 0;
+}
+.widget_woothemes_our_team .columns-2 .team-member {
+  width: 48%;
+}
+.widget_woothemes_our_team .columns-3 .team-member {
+  width: 30.75%;
+}
+.widget_woothemes_our_team .columns-4 .team-member {
+  width: 22.05%;
+}
+.widget_woothemes_our_team .columns-5 .team-member {
+  width: 16.9%;
+}
+.widget_woothemes_our_team .columns-6 .team-member {
+  width: 13.5%;
+}

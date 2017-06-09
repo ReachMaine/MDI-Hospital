@@ -6,11 +6,12 @@
 	require_once(get_stylesheet_directory().'/custom/woo.php');
 	require_once(get_stylesheet_directory().'/custom/job-manager.php');
 	require_once(get_stylesheet_directory().'/custom/clinico.php');
+	require_once(get_stylesheet_directory().'/custom/ourteam.php');
 	//require_once (get_template_directory(). '/core/portfolio-cols.php'); // want to use these functions
 	add_action('after_setup_theme', ea_setup);
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
-	* 
+	*
 	*/
 	function ea_setup() {
 	 /* do stuff ehre. */
@@ -55,10 +56,10 @@
 		}
 		add_filter( 'gettext', 'zig_change_theme_text', 20, 3 );
 	}
-	// contact form 7 fallback for date field 
+	// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
-	// add search shortcode 
+	// add search shortcode
 	function mdih_searchform( $form ) {
 
 	    $form = '<form role="search" method="get" id="searchform" class="search-form" action="' . home_url( '/' ) . '" >';
@@ -68,7 +69,7 @@
 		$form .= '<input type="submit" id="searchsubmit" class="search-submit" value="'. esc_attr_x('Search', 'submit button') .'" />';
 	    $form .= '</form>';
 	    	    return $form;
-	}	
+	}
 
 	add_shortcode('mdih_search', 'mdih_searchform');
 
@@ -108,7 +109,7 @@
         $title = single_cat_title( '', false );
 
     }
-    $title = str_replace('Product Category:','',$title); 
+    $title = str_replace('Product Category:','',$title);
     $title = str_replace('Archives:','', $title);
     return $title;
 
@@ -141,7 +142,7 @@ function WPSEO_OpenGraph_Image() {
 }
 if(class_exists('WPSEO_OpenGraph_Image')) {
   add_filter("wpseo_opengraph", "WPSEO_OpenGraph_Image");
-} 
+}
 
 // filter to wrap embedded videos (youtube) in div ss.t. we can style it
 add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 3);
