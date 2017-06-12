@@ -13,3 +13,12 @@ function reach_filter_content($in_content, $post) {
   }
   return $out_content;
 }
+
+// trying to get the images to be rectangle since all cropped nicely to rectangle.
+add_image_size('team-member-pic', 250, 350, false);
+
+add_filter('woothemes_get_our_team_args', 'reach_img_size');
+function reach_img_size($args) {
+  $args['size'] = array(250, 350);
+  return ($args);
+}
