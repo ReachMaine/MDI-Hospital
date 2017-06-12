@@ -64,3 +64,24 @@
     }
   }
 }
+@media screen and (max-width: 600px) { // mobile styling....
+  .widget_woothemes_our_team .columns-2,
+  .widget_woothemes_our_team .columns-3,
+  .widget_woothemes_our_team .columns-4,
+  .widget_woothemes_our_team .columns-5,
+  .widget_woothemes_our_team .columns-6 {
+    .team-member {
+      width: 100%;
+      figure { // picture
+          text-align: center;
+      }
+      .member { // title
+        text-align: center;
+      }
+      .role { // role
+        text-align: center;
+      }
+    }
+
+	}
+}
