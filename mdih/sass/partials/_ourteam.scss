@@ -46,3 +46,21 @@
 .widget_woothemes_our_team .columns-6 .team-member {
   width: 13.5%;
 }
+
+.widget.widget_woothemes_our_team {
+  .team-member {
+    padding-bottom: 15px;
+    .member { // title
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .role { // role
+      margin-top: 0px;
+    }
+    .team-member-text {
+      .toggle_widget .accordion_content {
+        padding-left: 20px;
+      }
+    }
+  }
+}

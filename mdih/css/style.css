@@ -232,6 +232,16 @@ label {
 .widget_woothemes_our_team .columns-6 .team-member {
   width: 13.5%; }
 
+.widget.widget_woothemes_our_team .team-member {
+  padding-bottom: 15px; }
+  .widget.widget_woothemes_our_team .team-member .member {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .widget.widget_woothemes_our_team .team-member .role {
+    margin-top: 0px; }
+  .widget.widget_woothemes_our_team .team-member .team-member-text .toggle_widget .accordion_content {
+    padding-left: 20px; }
+
 /* header styling */
 .logo {
   padding-top: 18px; }
