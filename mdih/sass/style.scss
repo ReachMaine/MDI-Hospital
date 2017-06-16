@@ -104,6 +104,18 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 .synved-social-container.synved-social-container-share + div {
 	clear: both; // clear both after floated social icons right.
 }
+.mdih-hiring-widget .mdih-hiring { // div around hiring text widget
+	a.mdhi-widget-button {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+	}
+	p {
+		margin-top: 0px;
+		margin-bottom: 0px;
+
+	}
+}
 .cws-widget.eai-menu .menu li>a::before {
 	content: "\f178";
 }

@@ -333,6 +333,14 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 .synved-social-container.synved-social-container-share + div {
   clear: both; }
 
+.mdih-hiring-widget .mdih-hiring a.mdhi-widget-button {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%; }
+.mdih-hiring-widget .mdih-hiring p {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
 .cws-widget.eai-menu .menu li > a::before {
   content: "\f178"; }
 
