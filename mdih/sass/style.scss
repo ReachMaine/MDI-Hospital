@@ -105,16 +105,27 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 	clear: both; // clear both after floated social icons right.
 }
 .mdih-hiring-widget .mdih-hiring { // div around hiring text widget
-	a.mdhi-widget-button {
-		padding-left: 0px;
-		padding-right: 0px;
-		width: 100%;
-	}
 	p {
 		margin-top: 0px;
 		margin-bottom: 0px;
-
 	}
+	.job_summary_shortcode {
+		img {
+			height: 100px!important;
+			width: auto;
+			margin: auto;
+		}
+		h1 {
+			font-size: 1.5em!important;
+		}
+	}
+	.mdih-widget-button {
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+		border: 0px!important;
+		width: 100%!important;
+	}
+
 }
 .cws-widget.eai-menu .menu li>a::before {
 	content: "\f178";
