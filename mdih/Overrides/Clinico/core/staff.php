@@ -1,4 +1,4 @@
-<?php /* zig:  add board certificatin to staff meta
+<?php /* zig:  add board certificatin to staff meta and set let heirarchical default to false.
 
 */ ?>
 <?php
