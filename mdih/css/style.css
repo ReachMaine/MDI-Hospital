@@ -341,7 +341,7 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
   width: auto;
   margin: auto; }
 .mdih-hiring-widget .mdih-hiring .job_summary_shortcode h1 {
-  font-size: 1.6em !important; }
+  font-size: 1.5em !important; }
 .mdih-hiring-widget .mdih-hiring .mdih-widget-button {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -459,7 +459,7 @@ a.eai-moreptr {
 .page-content main ul.doc-icon > li:before {
   content: "\F0F0"; }
 
-.news .cats {
+.news:not(.staff) .cats {
   display: none; }
 
 .news.blog-post:not(.staff) .item .wrapper {

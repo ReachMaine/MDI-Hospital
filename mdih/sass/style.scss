@@ -280,7 +280,7 @@ a.eai-moreptr {
 	content:"\F0F0";
 }
 
-.news .cats{
+.news:not(.staff) .cats{
 	display: none;
 }
 
