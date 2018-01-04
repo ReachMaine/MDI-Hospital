@@ -1,6 +1,6 @@
-<?php 
-/* 
-add [mdih_services] shortcode 
+<?php
+/*
+add [mdih_services] shortcode
  and [mdih_staff] shortcode to show individualt staff member.
 */
 //require_once (get_template_directory(). '/core/portfolio-cols.php'); // want to use these functions
@@ -101,8 +101,8 @@ function mdi_shortcode_services($attr) {
 					$out .= '</div>';
 				}
 				$out .= '</div></div>';
-			$out .= '</div>'; // end description part 
-			$out .= '<div class="row clearfix">';
+			$out .= '</div>'; // end description part
+			$out .= '<div class="row clearfix zigfix2">';
 			$procedures = get_option_value( 'cws-clinico-dept-procedures', $v->term_id);
 			if (!empty($procedures)) {
 				$procedures = explode(',',$procedures);
@@ -126,14 +126,14 @@ function mdi_shortcode_services($attr) {
 							$out .= '</dl></div>';
 						}
 					}
-					
+
 					$out .= '<a class="eai-moreptr" href="'.$morelink.'">Full list of services<i class="fa fa-angle-right"></i></a>';
 					$out .= '</div>';
 				}
 			}  else {
 				//$out .= "<p> no procedures</p>";// debugging
-			}  // end if procedures 
-			if ($v->count > 0) {
+			}  // end if procedures
+			if (($v->count > 0) && false) { // zig xout per oka
 
 				$out .= '<div class="col">';
 				$out .= '<div class="col_title">' . __('Doctors',THEME_SLUG) . '</div>'; // !!!
@@ -258,14 +258,14 @@ function mdi_shortcode_staff($attr) {
 					}
 					$output .= "</div>";
 				endif;
-				$output .= "</div></div>"; 
+				$output .= "</div></div>";
 				$thumbnail_dims = cws_get_post_tmumbnail_dims( 'pinterest', 2, 'none' );
 				$chars_count = cws_get_content_chars_count( 'pinterest', 4 );
 				//$output .= build_portfolio_item (get_the_ID(), 4 , false, $thumbnail_dims, $chars_count, 'staff');
 
-		} // end while posts 
+		} // end while posts
 		$htmlreturn .= $output.'</div>'; // end staff member;
-	} 
+	}
 	return $htmlreturn;
 } // end shortcode mdih_staff
 
