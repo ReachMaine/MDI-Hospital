@@ -25,7 +25,7 @@ function mdi_shortcode_services($attr) {
 		$out .= "<div class='services'>";
 		foreach ($depts as $dept=>$v) {
 			$open = in_array($v->slug, $opened);
-			$morelink = get_option_value( 'cws-clinico-dept-more', $v->term_id );
+			$morelink =  get_term_meta( $v->term_id ,'cws-clinico-dept-more', true );
 			$out .= '<div class="accordion_section'. ( $open ? ' active' : '' ) .'">';
 			$fa_widget = get_option_value( 'cws-clinico-dept-fa', $v->term_id );
 			$fa_check = sprintf('<i class="service_icon fa fa-2x fa-%s"></i>',  !empty($fa_widget) ? $fa_widget : 'check');

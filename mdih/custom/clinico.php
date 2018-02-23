@@ -63,3 +63,55 @@
 			echo "</div>";
 		endif;
 	}
+
+/* *** custom taxonomy meta for cws-staff-dept ****/
+	// display the more link to taxonomy for cws-staff-dept ADD
+	add_action( 'cws-staff-dept_add_form_fields', 'add_staffmore_meta', 10, 2 );
+	function add_staffmore_meta($taxonomy) {
+			?>
+			<div class="form-field">
+				<label for="cws-clinico-dept-more"><?php _e('More Link', THEME_SLUG)?></label>
+				<textarea name="cws-clinico-dept-more" id="cws-clinico-dept-more" class="postform" rows="1" cols="40"></textarea>
+			</div>
+			<?php
+	}
+
+	// save the term meta when create the taxonomy - ADD
+	add_action( 'created_cws-staff-dept', 'save_staffmore_meta', 10, 2 );
+	function save_staffmore_meta( $term_id, $tt_id ){
+	    if( isset( $_POST['cws-clinico-dept-more']  ) && '' !== $_POST['cws-clinico-dept-more']  ){
+	        $moretxt =  $_POST['cws-clinico-dept-more'] ;
+	        add_term_meta( $term_id, 'cws-clinico-dept-more', $moretxt, true );
+	    }
+	}
+
+	//display  the field for update the term meta - UPDATE
+	add_action( 'cws-staff-dept_edit_form_fields', 'edit_staffmore_meta', 10, 2 );
+	function edit_staffmore_meta( $term, $taxonomy ){
+
+    // get current value
+     $morelink = get_term_meta( $term->term_id, 'cws-clinico-dept-more', true );
+
+    ?>
+			<tr class="form-field">
+					<th scope="row" valign="top">
+						<label for="cws-clinico-dept-more"><?php _e('More Link', THEME_SLUG)?></label>
+					</th><td>
+						<textarea name="cws-clinico-dept-more" id="cws-clinico-dept-more" class="postform" rows="1" cols="40"><?php echo $morelink; ?></textarea>
+					</td>
+				</tr>
+			<?php
+		}
+
+	// save the value for edited taxonomy meta
+	add_action( 'edited_cws-staff-dept', 'update_staffmore_meta', 10, 2 );
+	function update_staffmore_meta( $term_id, $tt_id ){
+			if( isset( $_POST['cws-clinico-dept-more']  ) && '' !== $_POST['cws-clinico-dept-more']  ){
+				 $moretxt =  $_POST['cws-clinico-dept-more'];
+				 update_term_meta( $term_id, 'cws-clinico-dept-more', $moretxt );
+		 } 
+	}
+
+
+
+/* **** end custom taxonomy meta for cws-staff-dept ***** */
