@@ -53,6 +53,12 @@ h3.mdih-box_title {
 .page-content main .cws-widget ul > li > a {
   color: #006993; }
 
+.featured-image-caption {
+  line-height: 16px;
+  color: #989898;
+  font-size: .9em;
+  padding-top: 3px; }
+
 /* --------- End  Settings --------------*/
 /* ---------- Recent Posts Extended Styling ---------------------------------------------- */
 #eai-rpe-inline4.rpwe-block ul.rpwe-ul li.rpwe-li:before {
