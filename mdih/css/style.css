@@ -124,8 +124,19 @@ h3.mdih-box_title {
   width: 0px; }
 
 .page-content main div.job_listings ul.jobs_listings {
-  border-top: 1px solid #006993; }
+  border-top: 1px solid #006993;
+ /* not sure why this didnt work, used template mod in content-job_listing.php of job_manager dir
+ li.job_listing {
+	ul.meta {
+		li.date {
+			display: none;
+		}
+	}
+} // listing
+*/ }
 
+.page-content main div.single_job_listing .job-listing-meta .date-posted {
+  display: none; }
 .page-content main div.single_job_listing .job_description ul li {
   list-style-type: disc;
   list-style-position: inside; }

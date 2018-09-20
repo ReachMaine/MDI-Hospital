@@ -2,7 +2,7 @@
 // both list & singles
 .page-content main div.job_listings,
 .page-content main div.single_job_listing {
-	
+
 	ul.job_types, ul.job_listings, .job_description ul, ul.chosen-results {
 		li:before  {
 			content: "";
@@ -11,18 +11,35 @@
 		}
 
 	}
-} 
+}
 // lists of jobs
 .page-content main div.job_listings {
 	ul.jobs_listings {
 		border-top: 1px solid $mdiDarkBlue;
-	}
+		 /* not sure why this didnt work, used template mod in content-job_listing.php of job_manager dir
+		 li.job_listing {
+			ul.meta {
+				li.date {
+					display: none;
+				}
+			}
+		} // listing
+		*/
+	} // listings
 
 }
-.page-content main div.single_job_listing .job_description {
-	ul li {
-		list-style-type: disc;
-		list-style-position: inside;
+// single job posting
+.page-content main div.single_job_listing {
+	.job-listing-meta {
+		.date-posted {
+			display: none;
+		}
 	}
+	.job_description {
+		 ul li {
+			 list-style-type: disc;
+			 list-style-position: inside;
+		 }
+	 }
 }
 /* ---------- End WP-Jobs styling ------------------------------------------ */
