@@ -41,5 +41,13 @@
 			 list-style-position: inside;
 		 }
 	 }
+	 .mdih-career-blurb {
+		 color: $mdiDarkBlue;
+		 font-style:italic;;
+		 padding: 10px;
+		 p:first-child {
+			 margin-top: 0px;
+		 }
+	 }
 }
 /* ---------- End WP-Jobs styling ------------------------------------------ */

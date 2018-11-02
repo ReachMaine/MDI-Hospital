@@ -140,6 +140,12 @@ h3.mdih-box_title {
 .page-content main div.single_job_listing .job_description ul li {
   list-style-type: disc;
   list-style-position: inside; }
+.page-content main div.single_job_listing .mdih-career-blurb {
+  color: #006993;
+  font-style: italic;
+  padding: 10px; }
+  .page-content main div.single_job_listing .mdih-career-blurb p:first-child {
+    margin-top: 0px; }
 
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
