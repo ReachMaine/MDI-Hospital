@@ -290,6 +290,12 @@ label {
     .widget_woothemes_our_team .columns-5 .team-member .role,
     .widget_woothemes_our_team .columns-6 .team-member .role {
       text-align: center; } }
+/* ADA compliance, as much as possible */
+.userway-s1 .userway-s1-selected > img,
+.userway-s1 .userway-s1-selected > div.name {
+  outline: dashed 4px #c00 !important;
+  margin: 4px; }
+
 /* header styling */
 .logo {
   padding-top: 18px; }

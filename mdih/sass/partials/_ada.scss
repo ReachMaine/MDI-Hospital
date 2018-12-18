@@ -1,0 +1,10 @@
+/* ADA compliance, as much as possible */
+$ada-outline-color: #c00;
+
+.userway-s1 {
+  .userway-s1-selected>img,
+  .userway-s1-selected>div.name { // staff members archive
+    outline: dashed 4px $ada-outline-color!important;
+    margin: 4px;
+}
+}

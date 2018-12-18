@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
-<?php /* 
+<?php /*
 	zig 1Sept15 - add GTM call.
-	28Apr16 zig - add WLZB one pixel image after body tag.  per Oka instructions - 
+	28Apr16 zig - add WLZB one pixel image after body tag.  per Oka instructions -
 	27July16 zig - change WLZB image.
 */ ?>
 <html class="not-ie no-js" xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -69,6 +69,8 @@
 				<div class="sticky_container clearfix">
 				<?php
 					cws_show_logo();
+					// add skiplink
+					echo '<a class="skip-link skip-main" href="#mdih-main-content">Skip to main content</a>';
 					//<!--Start main menu-->
 					global $current_user;
 					$menu_locations = get_nav_menu_locations();
@@ -162,7 +164,7 @@
 					if (is_archive()){echo "<!-- is archive-->";} else {echo "<!-- NOT archive-->";}
 					if (is_category()){echo "<!-- is cat -->";} else {echo "<!-- NOT cat-->";}
 					if (is_post_type_archive()){echo "<!-- is post_type_archive -->";} else {echo "<!-- NOT post_type_archive -->";}
-					
+
 					echo '<section class="page-title ztitle"><div class="container clearfix">';
 						if (is_archive()) {
 

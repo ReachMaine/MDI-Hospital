@@ -31,7 +31,7 @@ $second_line = '';
 					}
 				}
 			?>
-			<main>
+			<main id="mdih-main-content" tabindex="-1">
 				<div class="grid-row">
 					<div class="cws_widget_content">
 						<section class="news blog-post zzz">
