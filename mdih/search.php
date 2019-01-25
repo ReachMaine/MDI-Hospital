@@ -5,7 +5,7 @@
 		return;
 	}*/
 /*
-	31Aug15 - always make title linked. 
+	31Aug15 - always make title linked.
 */
 	$paged = !empty($_POST['paged']) ? (int)$_POST['paged'] : (!empty($_GET['paged']) ? (int)$_GET['paged'] : ( get_query_var("paged") ? get_query_var("paged") : 1 ) ) ;
 	$posts_per_page = (int)get_option('posts_per_page');
@@ -26,6 +26,7 @@
 		<div class="container">
 		<?php
 			if (cws_has_sidebar_pos($sb_block)) {
+				echo '<a class="skip-link skip-sidebar" href="#mdih-main-content">'.__("Skip over sidebar", "mdih").'</a>';
 				if ('both' == $sb_block) {
 					echo '<aside class="sbleft">';
 					dynamic_sidebar($sb['sidebar1']);
@@ -40,7 +41,7 @@
 				}
 			}
 		?>
-			<main>
+			<main id="mdih-main-content">
 				<div class="grid-row">
 					<?php
 					global $wp_query;

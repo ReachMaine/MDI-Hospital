@@ -110,9 +110,9 @@
 								echo $widgets;
 							?>
 							</div>
-							<div class="switcher">
+							<button class="switcher">
 								<?php echo cws_get_option("toggle-sidebar-title"); ?>
-							</div>
+							</button>
 						<?php
 						endif;
 					endif;

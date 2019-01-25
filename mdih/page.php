@@ -21,6 +21,8 @@ if (isset($_GET['asearch'])) {
 		<div class="container">
 		<?php
 			if (cws_has_sidebar_pos($sb_block)) {
+				// add skiplink above sidebar
+				echo '<a class="skip-link skip-sidebar" href="#mdih-main-content">'.__("Skip over sidebar", "mdih").'</a>';
 				if ('both' == $sb_block) {
 					echo '<aside class="sbleft">';
 					dynamic_sidebar($sb['sidebar1']);
@@ -35,6 +37,7 @@ if (isset($_GET['asearch'])) {
 				}
 			}
 		?>
+		<!-- page templage -->
 		<main id="mdih-main-content" tabindex="-1">
 			<?php
 				if (have_posts()):

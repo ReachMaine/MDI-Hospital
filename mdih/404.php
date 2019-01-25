@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  Modifications:
  	-4Sept15 zig - add search form to bottom of 404 page.
@@ -9,7 +9,7 @@ if (isset($_GET['asearch'])) {
 	}
 ?>
 <?php get_header(); ?>
-	<div class="page-content">
+	<div id="mdih-main-content" class="page-content">
 		<div class="container">
 			<main>
 				<div class='grid-row' id="header-404">
@@ -35,17 +35,11 @@ if (isset($_GET['asearch'])) {
 					</a>
 				</div>
 				<div class='grid-row'>
-					<?php  /*zig  get_template part not working.... */ ?> 
+					<?php  /*zig  get_template part not working.... */ ?>
 					<div class='sel'>
 							<?php _e("or try a search...", THEME_SLUG); ?>
 					</div>
-					<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<label>
-							<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ); ?></span>
-							<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ); ?>" required />
-						</label>
-						<input type="submit" class="search-submit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
-					</form>
+					<?php get_search_form(); ?>
 				</div>
 			</main>
 		</div>

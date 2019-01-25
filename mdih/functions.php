@@ -149,4 +149,11 @@ add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 3);
 function wrap_embed_with_div($html, $url, $attr) {
         return '<div class="ea-responsive-container">'.$html.'</div>';
 }
+
+// WCAG complicance
+// add the javascript for the expand_image stuff
+	function ea_enqueue_styles() {
+	    wp_enqueue_script('mdih_wcag', get_stylesheet_directory_uri().'/custom/mdih_wcag.js', array( 'jquery' ) );
+	}
+	add_action( 'wp_enqueue_scripts', 'ea_enqueue_styles' );
 ?>

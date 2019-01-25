@@ -29,7 +29,7 @@ function mdi_shortcode_services($attr) {
 			$out .= '<div class="accordion_section'. ( $open ? ' active' : '' ) .'">';
 			$fa_widget = get_option_value( 'cws-clinico-dept-fa', $v->term_id );
 			$fa_check = sprintf('<i class="service_icon fa fa-2x fa-%s"></i>',  !empty($fa_widget) ? $fa_widget : 'check');
-			$out .= sprintf('<div id="cws-service-%s" class="accordion_title">%s%s<i class="accordion_icon"></i></div>', $v->term_id, $fa_check, $v->name);
+			$out .= sprintf('<div id="cws-service-%s" class="accordion_title">%s%s<button class="accordion_icon"></i></div>', $v->term_id, $fa_check, $v->name);
 			$out .= '<div class="accordion_content"' . ( $open ? '' : ' style="display:none;"' ) . '>';
 			$out .= '<div class="details">';
 				$title_img = wp_get_attachment_image_src(get_option_value( 'cws-clinico-dept-img', $v->term_id), 'full');

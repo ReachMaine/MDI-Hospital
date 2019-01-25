@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<?php /* end anniversary header */ ?>
-	<div class="<?php echo $class_container; ?>">	
+	<div class="<?php echo $class_container; ?>">
 		<div class="container">
 		<?php
 			if (cws_has_sidebar_pos($sb_block)) {
@@ -53,7 +53,7 @@
 				}
 			}
 		?>
-		<main>
+		<main id="mdih-main-content" tabindex="-1">
 			<?php
 				if (have_posts()):
 					while ( have_posts() ): the_post();

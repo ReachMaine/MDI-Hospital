@@ -18,6 +18,7 @@ $second_line = '';
 			<?php
 
 				if (cws_has_sidebar_pos($sb_block)) {
+					echo '<a class="skip-link skip-sidebar" href="#mdih-main-content">'.__("Skip over sidebar", "mdih").'</a>';
 					if ('both' == $sb_block) {
 						echo '<aside class="sbleft">';
 						dynamic_sidebar($sb['sidebar1']);
@@ -33,7 +34,7 @@ $second_line = '';
 				} else {
 					echo '<aside class="sbright">';
 					dynamic_sidebar('career');
-					echo '</aside>'; 
+					echo '</aside>';
 				}
 				/* if ( is_active_sidebar( 'career') ) {
 					echo '<aside class="sbright">';
@@ -41,7 +42,7 @@ $second_line = '';
 					echo '</aside>';
 				} */
 			?>
-			<main>
+			<main id="mdih-main-content">
 				<div class="grid-row">
 					<div class="cws_widget_content">
 						<section class="news blog-post job_listing">
