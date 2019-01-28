@@ -23,10 +23,13 @@ Text Domain: clinico
 .logo {
 	padding-top: 18px;
 }
-.home .toggle_sidebar .switcher {
+.home .toggle_sidebar .switcher { // just on the homepage, change color.
 	background-color: $mdiDarkBlue;
-}
 
+}
+.toggle_sidebar .switcher { // swither on all pages.
+	border-width: 0px;
+}
 // main menu
 
 .main-menu .menu-item a {
