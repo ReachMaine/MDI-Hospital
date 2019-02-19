@@ -50,4 +50,91 @@
 		 }
 	 }
 }
+// job summary shortcode
+.job_summary_shortcode {
+  border: 1px solid #ccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.job_summary_shortcode.aligncenter {
+  display: block;
+  margin: 2em auto 2em; }
+
+.job_summary_shortcode.alignleft {
+  float: left;
+  margin: 0 2em 2em 0; }
+
+.job_summary_shortcode.alignright {
+  float: right;
+  margin: 0 0 2em 2em; }
+
+.job_summary_shortcode a {
+  text-decoration: none;
+  color: inherit; }
+
+.job_summary_shortcode img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-top-left-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+
+.job_summary_shortcode .job_summary_content {
+  padding: 0 1em; }
+
+.job_summary_shortcode .meta {
+  font-style: italic;
+  color: #777; }
+
+.job_summary_shortcode .job-type {
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  height: 1em;
+  width: auto;
+  min-width: 1em;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1em;
+  margin: -0.5em -0.5em 0 0; }
+
+.job_summary_shortcode .job-type.full-time {
+  background-color: #90da36; }
+
+.job_summary_shortcode .job-type.part-time {
+  background-color: #f08d3c; }
+
+.job_summary_shortcode .job-type.temporary {
+  background-color: #d93674; }
+
+.job_summary_shortcode .job-type.freelance {
+  background-color: #39c; }
+
+.job_summary_shortcode .job-type.internship {
+  background-color: #6033cc; }
+
 /* ---------- End WP-Jobs styling ------------------------------------------ */

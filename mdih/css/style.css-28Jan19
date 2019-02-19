@@ -107,6 +107,8 @@ h3.mdih-box_title {
   padding-right: 15px; }
 .wpcf7 .wpcf7-form input[type="checkbox"] {
   border-color: #333; }
+.wpcf7 .wpcf7-form .wpcf7-response-output {
+  background-color: #97D3B6; }
 
 @media screen and (max-width: 767px) {
   .wpcf7 .wpcf7-form dl dt {
@@ -376,12 +378,67 @@ label {
     .widget_woothemes_our_team .columns-5 .team-member .role,
     .widget_woothemes_our_team .columns-6 .team-member .role {
       text-align: center; } }
+/* ADA compliance, as much as possible */
+.userway-s1 .pic a.userway-s1-selected > img,
+.userway-s1 .userway-s1-selected > img.aligncenter,
+.userway-s1 .userway-s1-selected > div.name {
+  outline: dashed 4px #c00 !important;
+  margin: 4px; }
+.userway-s1 form.search-form input.search-submit.userway-s1-selected {
+  width: 114px;
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 0px;
+  opacity: 1;
+  border: dashed 4px #c00 !important; }
+
+a.skip-twitter,
+a.skip-sidebar,
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999; }
+
+a.skip-twitter:focus, a.skip-twitter:active,
+a.skip-main:focus, a.skip-main:active,
+a.skip-sidebar:focus, a.skip-sidebar:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid #97D3B6;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999; }
+
+a.skip-twitter:focus, a.skip-twitter:active {
+  position: relative;
+  width: fit-content;
+  margin: auto; }
+
+button.accordion_icon {
+  border-style: none;
+  background-color: transparent; }
+
 /* header styling */
 .logo {
   padding-top: 18px; }
 
 .home .toggle_sidebar .switcher {
   background-color: #006993; }
+
+.toggle_sidebar .switcher {
+  border-width: 0px; }
 
 .main-menu .menu-item a {
   padding: 11px 20px; }
@@ -487,28 +544,6 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 
 .our_team.news-pinterest.news--1 .team_member_info .name {
   height: 46px; }
-
-.mdih-widget-roundborder {
-  border: 1px solid #006993;
-  border-radius: 15px; }
-
-.cws-widget.mdih-podcast-channels {
-  padding-top: 10px; }
-  .cws-widget.mdih-podcast-channels .widget-title {
-    border: 0px;
-    text-align: center; }
-  .cws-widget.mdih-podcast-channels h5 {
-    padding-left: 10px;
-    margin-top: 10px; }
-  .cws-widget.mdih-podcast-channels ul {
-    list-style: none; }
-    .cws-widget.mdih-podcast-channels ul li {
-      border-top: 0px;
-      border-bottom: 0px;
-      padding-top: 0px;
-      padding-bottom: 0px; }
-      .cws-widget.mdih-podcast-channels ul li a:before {
-        content: ""; }
 
 .mdih-widget_across ul li {
   width: 25%;
