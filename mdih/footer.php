@@ -89,7 +89,7 @@
 			// color: 'null',
 			// uncomment the following line to override type set via widget(1=man, 2=chair, 3=eye)
 			// type: '2',
-			account: 'YS7oNIx2Y9'
+			account: 'xbounfqXOr'
 			};
 	</script>
 <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>

@@ -315,9 +315,9 @@ a.skip-main {
   overflow: hidden;
   z-index: -999; }
 
-a.skip-twitter:focus, a.skip-twitter:active,
-a.skip-main:focus, a.skip-main:active,
-a.skip-sidebar:focus, a.skip-sidebar:active {
+.userway-s1 a.skip-twitter:focus, .userway-s1 a.skip-twitter:active,
+.userway-s1 a.skip-main:focus, .userway-s1 a.skip-main:active,
+.userway-s1 a.skip-sidebar:focus, .userway-s1 a.skip-sidebar:active {
   color: #fff;
   background-color: #000;
   left: auto;
@@ -332,8 +332,7 @@ a.skip-sidebar:focus, a.skip-sidebar:active {
   text-align: center;
   font-size: 1.2em;
   z-index: 999; }
-
-a.skip-twitter:focus, a.skip-twitter:active {
+.userway-s1 a.skip-twitter:focus, .userway-s1 a.skip-twitter:active {
   position: relative;
   width: fit-content;
   margin: auto; }
