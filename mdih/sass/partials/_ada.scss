@@ -22,18 +22,20 @@ $ada-outline-color: #c00;
     }
   }
 }
-// hide the "skip main content except for readers"
-a.skip-twitter,
-a.skip-sidebar,
-a.skip-main {
-    left:-999px;
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
-}
+
+  // hide the "skip main content except for readers"
+  // whether the navigation aid is select or not
+  a.skip-twitter,
+  a.skip-sidebar,
+  a.skip-main {
+      left:-999px;
+      position:absolute;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+      z-index:-999;
+  }
 .userway-s1 { // keyboard nav selected
   a.skip-twitter:focus, a.skip-twitter:active,
   a.skip-main:focus, a.skip-main:active,
@@ -59,7 +61,6 @@ a.skip-main {
     margin: auto;
   }
 }
-
 // change accordian open/close to buttons change for WAC compliance
 button.accordion_icon {
 	border-style: none;

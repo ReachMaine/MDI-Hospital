@@ -10,6 +10,7 @@
 		<div class="container">
 			<?php
 				if (cws_has_sidebar_pos($sb_block)) {
+						echo '<a class="skip-link skip-sidebar" href="#mdih-main-content">'.__("Skip over sidebar", "mdih").'</a>';
 					if ('both' == $sb_block) {
 						echo '<aside class="sbleft">';
 						dynamic_sidebar($sb['sidebar1']);
@@ -24,7 +25,7 @@
 					}
 				}
 			?>
-			<main>
+			<main id="mdih-main-content">
 				<div class="grid-row">
 					<section class="news blog-post staff">
 						<div class="item">
@@ -75,7 +76,7 @@
 									/* __('procedures', THEME_SLUG ) => wp_get_post_terms( get_the_ID(), 'cws-staff-procedures'), */
 									/*__('degree', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-degree'] ) ? esc_attr( $cws_stored_meta['cws-staff-degree'] ) : '', */
 									/*__('residency', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-residency'] ) ? esc_attr( $cws_stored_meta['cws-staff-residency'] ) : '',
-									__('fellowship', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-fellowship'] ) ? esc_attr( $cws_stored_meta['cws-staff-fellowship'] ) : '',	 */								
+									__('fellowship', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-fellowship'] ) ? esc_attr( $cws_stored_meta['cws-staff-fellowship'] ) : '',	 */
 									__('certification', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-boardcert'] ) ? esc_attr( $cws_stored_meta['cws-staff-boardcert'] ) : '',
 									__('workingdays', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-workingdays'] ) ? $cws_stored_meta['cws-staff-workingdays'] : array()
 								);
@@ -83,16 +84,16 @@
 									$education_info = array(
 										__('Medical School', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-degree'] ) ? esc_attr( $cws_stored_meta['cws-staff-degree'] ) : '',
 										__('Internship/Residency', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-residency'] ) ? esc_attr( $cws_stored_meta['cws-staff-residency'] ) : '',
-										__('Fellowship', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-fellowship'] ) ? esc_attr( $cws_stored_meta['cws-staff-fellowship'] ) : '',									
+										__('Fellowship', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-fellowship'] ) ? esc_attr( $cws_stored_meta['cws-staff-fellowship'] ) : '',
 									);
 								} else {
 
-									if (isset( $cws_stored_meta['cws-staff-degree']) ) {				
+									if (isset( $cws_stored_meta['cws-staff-degree']) ) {
 										$staff_info[__('degree', THEME_SLUG )] = esc_attr( $cws_stored_meta['cws-staff-degree'] );
 									}
 									/*$staff_info[] = __('degree', THEME_SLUG ) => isset( $cws_stored_meta['cws-staff-degree'] ) ? esc_attr( $cws_stored_meta['cws-staff-degree'] ) : ''; */
 								}
-								
+
 								echo "<section class='cats_group'>";
 									$dow = array( __("Sunday",THEME_SLUG) , __("Monday",THEME_SLUG), __("Tuesday", THEME_SLUG), __("Wednesday", THEME_SLUG), __("Thursday", THEME_SLUG), __("Friday", THEME_SLUG), __("Saturday", THEME_SLUG) );
 									foreach ($staff_info as $k => $v){
@@ -108,7 +109,7 @@
 															echo $v[$i]->name;
 														}
 														echo $i<count($v)-1 ? ", " : "";
-													}													
+													}
 												}
 												else{
 													echo $v;
