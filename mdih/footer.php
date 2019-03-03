@@ -1,5 +1,5 @@
 <?php
-
+/* 3march19 zig - accessibility widget code */ 
 	// $gen_sets = theme_get_option('general', 'gen_sets');
 ?>
 	<!--Start Footer-->
