@@ -28,7 +28,7 @@
 			<div class="grid-col grid-col-12">
 				<section class="cws-widget">
 					<section class="cws_widget_content">
-						<div style="background-image: url('//www.mdihospital.org/wp-content/uploads/2017/01/header-background-image-dark.jpg');"><img class="aligncenter wp-image-7250 size-full" style="padding: 10px; margin-bottom: 0px;" src="https://www.mdihospital.org/wp-content/uploads/2017/01/logo-with-year.png" width="935" height="100" srcset="https://www.mdihospital.org/wp-content/uploads/2017/01/logo-with-year.png 935w, https://www.mdihospital.org/wp-content/uploads/2017/01/logo-with-year-100x10.png 100w, https://www.mdihospital.org/wp-content/uploads/2017/01/logo-with-year-230x24.png 230w" sizes="(max-width: 935px) 100vw, 935px"></div>
+						<div style="background-image: url('//www.mdihospital.org/wp-content/uploads/2017/01/header-background-image-dark.jpg');"><img class="aligncenter wp-image-7250 size-full" style="padding: 10px; margin-bottom: 0px;" src="https://www.mdihospital.org/wp-content/uploads/2019/03/120-years-and-counting.png" width="935" height="100" srcset="https://www.mdihospital.org/wp-content/uploads/2019/03/120-years-and-counting.png 935w, https://www.mdihospital.org/wp-content/uploads/2019/03/120-years-and-counting-100x10.png 100w, https://www.mdihospital.org/wp-content/uploads/2019/03/120-years-and-countingr-230x24.png 230w" sizes="(max-width: 935px) 100vw, 935px"></div>
 					</section>
 				</section>
 			</div>
