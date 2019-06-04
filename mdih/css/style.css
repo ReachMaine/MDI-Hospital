@@ -484,6 +484,8 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 
 .grid-row.zpage-bottom-blog {
   margin-top: 0px; }
+  .grid-row.zpage-bottom-blog .item .date {
+    color: #006993; }
 
 .synved-social-container.synved-social-container-share {
   padding-left: 5px;
