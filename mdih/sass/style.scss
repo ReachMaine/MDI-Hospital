@@ -86,6 +86,16 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 }
 .grid-row.zpage-bottom-blog {
 	margin-top: 0px;
+	.item {
+		.widget-title {
+
+		}
+		.date {
+			//display: none; // hide the date from homepage featured blog posts.
+			color: #006993; // color same as box
+		}
+
+	}
 }
 // social icons at top of page & post
 
