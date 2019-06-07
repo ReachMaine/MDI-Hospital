@@ -497,6 +497,9 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder) {
 .page-id-7676 .synved-social-container.synved-social-container-share, .page-id-7645 .synved-social-container.synved-social-container-share {
   display: none; }
 
+.news.blog-post .date {
+  color: #006993; }
+
 .synved-social-container.synved-social-container-share + div {
   clear: both; }
 

@@ -113,6 +113,11 @@ img[class*="wp-image"], img[class*="wp-image"]:not(.noborder)  { // remove borde
 	}
 }
 
+.news.blog-post {
+	.date {
+		color: $mdiDarkBlue; // make date same color as background (they dont want it to show, but whatn the blue bar)
+	}
+}
 
 //.synved-social-container.synved-social-container-share + blockquote
 .synved-social-container.synved-social-container-share + div {
