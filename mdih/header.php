@@ -36,8 +36,8 @@
 	<body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 	<!-- advertising pixels -->
-	<img src="https://t.visto1.net/e?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFace88">
-	<img src="https://t.visto1.net/rt?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFaceso">
+	<!-- <img src="https://t.visto1.net/e?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFace88">
+	<img src="https://t.visto1.net/rt?adv=323&ca=0&acc=60&tag=1237431MDIHospitalFaceso"> -->
 	<?php
 		if ($post) {
 			$meta = get_post_meta($post->ID,'cws-mb');
