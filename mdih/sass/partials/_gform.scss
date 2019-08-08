@@ -1,4 +1,11 @@
 /* gravity forms styling */
+.gform_wrapper {
+	form {
+		.gform_title {
+			font-size: 2em;
+		}
+	}
+}
 .gf_page_steps .gf_step_active {
 	span.gf_step_label {
 		border-bottom: 2px solid $clinicoAccent;
@@ -58,4 +65,19 @@ div#gform_confirmation_message_3 {
 
 label {
 	font-size: 1em !important;
+}
+// bill pay form
+.mdih-gf-billpay { // form
+	.gform_body {
+		li.gfield {
+			label.gfield_label {
+				text-align: right;
+				padding-top: 6px;
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.gform_footer {
+		text-align: right;
+	}
 }

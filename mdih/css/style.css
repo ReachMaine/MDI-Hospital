@@ -237,6 +237,9 @@ h3.mdih-box_title {
 
 /* ---------- End WP-Jobs styling ------------------------------------------ */
 /* gravity forms styling */
+.gform_wrapper form .gform_title {
+  font-size: 2em; }
+
 .gf_page_steps .gf_step_active span.gf_step_label {
   border-bottom: 2px solid #78B3D0;
   font-size: larger; }
@@ -280,6 +283,13 @@ div#gform_confirmation_message_3 {
 
 label {
   font-size: 1em !important; }
+
+.mdih-gf-billpay .gform_body li.gfield label.gfield_label {
+  text-align: right;
+  padding-top: 6px;
+  margin-bottom: 0px; }
+.mdih-gf-billpay .gform_footer {
+  text-align: right; }
 
 /* styling for 120th Anniversary page template */
 .page.page-template-page-120 .MDIH-120th-header {
