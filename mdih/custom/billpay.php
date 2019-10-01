@@ -24,7 +24,7 @@ function mdih_billpay_form() {
 				$form .= '<div class="mdih-billpay-field"><label>Phone number:</label><input id="PhoneNumber" name="PhoneNumber" required="" type="text" value="" placeholder="123-123-1234" pattern = "^\d{3}-\d{3}-\d{4}$" />';
 					$form .= '<div class="mdih-billpay-instr">Please use phone number with dashes like 207-288-5081.</div>';
 				$form .= '</div>';
-				$form .= '<div class="mdih-billpay-field"><label>Amount:</label> <input id="Amount" name="Amount" type="Text" value=""
+				$form .= '<div class="mdih-billpay-field"><label>Amount:</label> <input id="Amount" name="Amount" type="Text" value="" required=""
 pattern = "^\d{1,6}\.\d{2}?$"/>';
 					$form .= '<div class="mdih-billpay-instr">Please include 2 decimal places in your payment amount.</div>';
 				$form .= '</div>';
