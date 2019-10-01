@@ -439,6 +439,30 @@ button.accordion_icon {
   border-style: none;
   background-color: transparent; }
 
+/* css for Bill pay form */
+form.mdih-billpay-form {
+  border: 1px solid #006993;
+  padding: 10px; }
+  form.mdih-billpay-form .mdih-billpay-field {
+    clear: both;
+    padding-bottom: 10px; }
+    form.mdih-billpay-form .mdih-billpay-field label {
+      display: block;
+      float: left;
+      width: 20%;
+      text-align: right;
+      padding-right: 1%;
+      padding-top: 10px; }
+    form.mdih-billpay-form .mdih-billpay-field .mdih-billpay-instr {
+      padding-left: 21%;
+      font-size: smaller;
+      font-style: italic; }
+    form.mdih-billpay-form .mdih-billpay-field input {
+      width: 60%; }
+  form.mdih-billpay-form .mdih-billpay-submit {
+    margin-top: 10px;
+    margin-left: 20%; }
+
 /* header styling */
 .logo {
   padding-top: 18px; }

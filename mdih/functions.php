@@ -7,6 +7,7 @@
 	require_once(get_stylesheet_directory().'/custom/job-manager.php');
 	require_once(get_stylesheet_directory().'/custom/clinico.php');
 	require_once(get_stylesheet_directory().'/custom/ourteam.php');
+	require_once(get_stylesheet_directory().'/custom/billpay.php');
 	//require_once (get_template_directory(). '/core/portfolio-cols.php'); // want to use these functions
 	add_action('after_setup_theme', ea_setup);
 	/**  ea_setup

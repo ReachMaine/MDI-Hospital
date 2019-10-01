@@ -1,0 +1,31 @@
+/* css for Bill pay form */
+form.mdih-billpay-form {
+  border: 1px solid $mdiDarkBlue;
+  padding: 10px;
+  .mdih-billpay-field {
+    clear: both;
+    padding-bottom: 10px;
+    label {
+      display: block;
+      float: left;
+      width: 20%;
+      text-align: right;
+      padding-right: 1%;
+      padding-top: 10px;
+    }
+    .mdih-billpay-instr {
+      padding-left: 21%; // same as label width + label padding-right
+      font-size: smaller;
+      font-style: italic;
+    }
+    input {
+      width: 60%;
+      //max-width: 300px;
+    }
+  }
+
+  .mdih-billpay-submit {
+    margin-top: 10px;
+    margin-left: 20%;
+  }
+}
