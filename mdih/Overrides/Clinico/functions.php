@@ -1,5 +1,5 @@
 <?php
-/* mods 
+/* mods
 *     26Feb16 zig - add overrides back in from theme update.
 		- function cws_post_output () - dont display categories, author or tags.
 */
@@ -917,7 +917,7 @@ function cws_wp_widget_thumbnail_html( $thumbnail_id = null, $instance ) {
 
 	function cws_post_output ($sb_block, $blogtype="large", $pinterest_layout="2", $post = null){
 		$pid = $post ? $post->ID : get_the_id();
-		
+
 
 		if ( get_post_type($pid) == 'post'):
 			?>
@@ -1144,7 +1144,7 @@ class Cws_Walker_Nav_Menu extends Walker {
 	private $elements;
 	private $elements_counter = 0;
 
-	function walk ($items, $depth) {
+	function walk ($items, $depth, ...$args) {
 		$this->elements = $this->get_number_of_root_elements($items);
 		return parent::walk($items, $depth);
 	}
