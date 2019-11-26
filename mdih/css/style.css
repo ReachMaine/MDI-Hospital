@@ -464,6 +464,18 @@ form.mdih-billpay-form {
     margin-left: 20%; }
 
 /* header styling */
+.topbar-nav-container {
+  background-color: #f8f8f8;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+  .topbar-nav-container #menu-top-menu {
+    text-align: right;
+    padding-right: 60px; }
+    .topbar-nav-container #menu-top-menu li {
+      display: inline-block; }
+      .topbar-nav-container #menu-top-menu li a {
+        padding: 0px 10px; }
+
 .logo {
   padding-top: 18px; }
 

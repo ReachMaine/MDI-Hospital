@@ -157,4 +157,9 @@ function wrap_embed_with_div($html, $url, $attr) {
 	    wp_enqueue_script('mdih_wcag', get_stylesheet_directory_uri().'/custom/mdih_wcag.js', array( 'jquery' ) );
 	}
 	add_action( 'wp_enqueue_scripts', 'ea_enqueue_styles' );
+// add a menu location for the top bar.
+function register_my_menu() {
+	register_nav_menu('top-bar',__( 'Top Bar Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 ?>

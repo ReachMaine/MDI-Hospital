@@ -64,6 +64,20 @@
 			$main_header_class .= ' secondary-page';
 		}
 		echo '<section class="'. $main_header_class .'">';
+
+		if( has_nav_menu('top-bar') ) {
+			echo '<div class="container">';
+				echo '<nav id="top-nav" class="topbar-nav-container">';
+					wp_nav_menu( array(
+						'theme_location'  => 'top-bar',
+						'menu_class' => 'top-menu',
+						'container' => false,
+						'walker' => new Cws_Walker_Nav_Menu()
+					) );
+				echo '</nav>';
+			echo '</div>';
+		}
+
 		?>
 			<div class="container">
 				<div class="sticky_container clearfix">
