@@ -464,20 +464,18 @@ form.mdih-billpay-form {
     margin-left: 20%; }
 
 /* header styling */
-.topbar-nav-container {
-  background-color: #f8f8f8;
-  padding-top: 2px;
-  padding-bottom: 2px; }
-  .topbar-nav-container #menu-top-menu {
-    text-align: right;
-    padding-right: 60px; }
-    .topbar-nav-container #menu-top-menu li {
-      display: inline-block; }
-      .topbar-nav-container #menu-top-menu li a {
-        padding: 0px 10px; }
-
-.logo {
-  padding-top: 18px; }
+#topbar {
+  margin-bottom: 0px;
+  padding-top: 2px; }
+  #topbar .topbar-nav-container {
+    max-width: 1180px;
+    margin: 0 auto; }
+    #topbar .topbar-nav-container .top-menu {
+      padding-right: 12px; }
+      #topbar .topbar-nav-container .top-menu li {
+        display: inline-block; }
+        #topbar .topbar-nav-container .top-menu li a {
+          padding: 0px 10px; }
 
 .home .toggle_sidebar .switcher {
   background-color: #006993; }
@@ -724,9 +722,15 @@ dl.eai-edu {
 @media screen and (max-width: 767px)
 */
 @media screen and (max-width: 767px) {
+  .top-menu {
+    text-align: center; }
+
   .news.blog-post .item .wrapper {
     width: 100%; } }
 @media screen and (min-width: 768px) {
+  .top-menu {
+    text-align: right; }
+
   .home .toggle_sidebar .switcher {
     font-size: 14px;
     padding-bottom: 10px;

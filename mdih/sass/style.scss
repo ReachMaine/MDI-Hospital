@@ -22,24 +22,29 @@ Text Domain: clinico
 @import "partials/billpay";
 /* header styling */
 // new topbar nav {
-.topbar-nav-container {
-	background-color: #f8f8f8;
+#topbar { // container
+	margin-bottom: 0px;
+	//background-color: #f8f8f8;
 	padding-top: 2px;
-	padding-bottom: 2px;
-	#menu-top-menu { // ul
-		text-align: right;
-		padding-right: 60px; // stay out of way of userway widget.
-		li {
-			display: inline-block;
-			a {
-					padding: 0px 10px;
+	//padding-bottom: 2px;
+	.topbar-nav-container {
+		max-width: 1180px;
+		margin: 0 auto;
+		.top-menu { // ul
+			//text-align: right; moved to media
+			padding-right: 12px;
+			//padding-right: 60px; // stay out of way of userway widget.
+			li {
+				display: inline-block;
+				a {
+						padding: 0px 10px;
+				}
 			}
 		}
 	}
 }
-
 .logo {
-	padding-top: 18px;
+	//padding-top: 18px;
 }
 .home .toggle_sidebar .switcher { // just on the homepage, change color.
 	background-color: $mdiDarkBlue;

@@ -66,8 +66,8 @@
 		echo '<section class="'. $main_header_class .'">';
 
 		if( has_nav_menu('top-bar') ) {
-			echo '<div class="container">';
-				echo '<nav id="top-nav" class="topbar-nav-container">';
+			echo '<div id="topbar" class="container">';
+				echo '<nav id="top-nav" class="topbar-nav-container sticky_container">';
 					wp_nav_menu( array(
 						'theme_location'  => 'top-bar',
 						'menu_class' => 'top-menu',

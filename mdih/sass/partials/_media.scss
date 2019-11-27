@@ -5,6 +5,9 @@
 @media screen and (max-width: 767px)
 */
 @media screen and (max-width: 767px) { // mobile styling....
+	.top-menu {
+		text-align: center;
+	}
 	.news.blog-post { // featured image full width.
 		.item .wrapper {
 			width: 100%;
@@ -12,8 +15,12 @@
 	}
 
 
+
 }
 @media screen and (min-width: 768px) { // desktop styling
+	.top-menu {
+		text-align: right;
+	}
 	.home .toggle_sidebar .switcher {
 		font-size: 14px;
 		padding-bottom: 10px;
