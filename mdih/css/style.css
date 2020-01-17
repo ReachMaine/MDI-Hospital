@@ -738,7 +738,10 @@ dl.eai-edu {
 
   .home .toggle_sidebar .switcher:after {
     border-top-color: #006993;
-    -moz-border-top-colors: #006993; } }
+    -moz-border-top-colors: #006993; }
+
+  .mdih-hide-desktop {
+    display: none !important; } }
 @media screen and (min-width: 1191px) {
   nav.main-nav-container {
     margin-top: 37px; } }
