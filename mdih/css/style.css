@@ -463,6 +463,13 @@ form.mdih-billpay-form {
     margin-top: 10px;
     margin-left: 20%; }
 
+.tablepress-table-description.tablepress-table-description-id-1 {
+  font-style: italic; }
+
+table#tablepress-1,
+.tablepress.mdih-table-border {
+  border: 1px solid #acacac !important; }
+
 /* header styling */
 #topbar {
   margin-bottom: 0px;
