@@ -21,8 +21,6 @@
 				is_post_type_archive('staff') ? post_type_archive_title( '', false ) : (
 					is_tax() ? (get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) )->name) : (get_post_type() == 'tribe_events' ? get_post_type_object('tribe_events')->labels->name : get_the_title() ) ) );
 			echo bloginfo('name') . ': ' . $title; ?></title>
-			<?php /* pixel from newscenter maine media zig 30Sept20 */ ?>
-			<script async src='https://tag.simpli.fi/sifitag/8b14a3a0-ec52-0136-564e-067f653fa718'></script>	
 
 	<?php
 		cws_put_ganalytics_code();
@@ -35,11 +33,12 @@
 		echo !empty($ga_code) ? '<script type="text/javascript">' . $ga_code . '</script>' : '';
 		wp_head();
 	?>
+	<!-- /* WLBZ pixel code Mar4 2021 */ -->
+	<script async src="https://js.alpixtrack.com/alphpixel.js?cust=4070182-537-WLBZ"></script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
-	<!-- advertising pixel zig 30Sept20 -->
-	<img src="https://jelly.mdhv.io/v1/star.gif?pid=5mhbC9mvSn77ToSQc3HaB3LKo0me&src=mh&evt=hi">
+
 
 	<?php
 		if ($post) {
