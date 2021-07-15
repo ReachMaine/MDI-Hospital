@@ -35,33 +35,6 @@
 	?>
 	<!-- /* WLBZ pixel code Mar4 2021 */ -->
 	<script async src="https://js.alpixtrack.com/alphpixel.js?cust=4070182-537-WLBZ"></script>
-	<script async src='https://tag.simpli.fi/sifitag/8b14a3a0-ec52-0136-564e-067f653fa718'></script> <?php /* added 25Jun21 per WLBZ retargeting AMP */ ?>
-	<!-- Begin TVSquared Page Visits Tracking Code added 15July21 zig -->
-<script type="text/javascript">
-    var _tvq = window._tvq = window._tvq || [];
-    (function() {
-      var u = (("https:" == document.location.protocol) ?
-          "https://collector-14471.us.tvsquared.com/"
-          :
-          "http://collector-14471.us.tvsquared.com/");
-      _tvq.push(['setSiteId', "TV-8154542781-1"]);
-      _tvq.push(['setTrackerUrl', u + 'tv2track.php']);
-      _tvq.push([function() {
-          this.deleteCustomVariable(5, 'page')
-      }]);
-      _tvq.push(['trackPageView']);
-      var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
-      g.defer = true;
-      g.async = true;
-      g.src = u + 'tv2track.js';
-      s.parentNode.insertBefore(g, s);
-    })();
-</script>
-<!-- End TVSquared Tracking Code -->
-
 	</head>
 	<body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
