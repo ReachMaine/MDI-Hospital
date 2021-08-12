@@ -9,3 +9,10 @@ Override Notes:
   examples:  Timber Gorman (1361), Micael Mason (1877), Phillip Brooks (272016)
 
   in single-staff.php will only show them for "doctors", which is determined by a position of "Physican" 
+  
+ Jquery depreciations...
+
+	Clinico /js/scripts.js  
+	    - window.load()
+		
+	Clinico/core/js/custom-admin.js
