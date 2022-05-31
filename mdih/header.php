@@ -61,7 +61,9 @@
     })();
 </script>
 <!-- End TVSquared Tracking Code -->
-
+<!-- Meta pix from KMoody & Assoc 31May22-->
+<meta name="facebook-domain-verification" content="8a1377wme1k8nbeg9e5xvyow6jn8mo" />
+<!-- End Meta pix from KMoody & Assoc -->
 	</head>
 	<body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
