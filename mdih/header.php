@@ -2,9 +2,7 @@
 <!--[if lte IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
 <?php /*
-	zig 1Sept15 - add GTM call.
-	28Apr16 zig - add WLZB one pixel image after body tag.  per Oka instructions -
-	27July16 zig - change WLZB image.
+
 */ ?>
 <html class="not-ie no-js" xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
@@ -33,10 +31,8 @@
 		echo !empty($ga_code) ? '<script type="text/javascript">' . $ga_code . '</script>' : '';
 		wp_head();
 	?>
-	<!-- /* WLBZ pixel code Mar4 2021 */ -->
-	<script async src="https://js.alpixtrack.com/alphpixel.js?cust=4070182-537-WLBZ"></script>
-	<script async src='https://tag.simpli.fi/sifitag/8b14a3a0-ec52-0136-564e-067f653fa718'></script> <?php /* added 25Jun21 per WLBZ retargeting AMP */ ?>
-	<!-- Begin TVSquared Page Visits Tracking Code added 15July21 zig -->
+  <?/* zig 20Jan23 - remove alpixtrack  &  Simpli.fi pixel codes */ ?>
+	<!-- Begin TVSquared Page Visits Tracking Code added 15July21 zig  -->
 <script type="text/javascript">
     var _tvq = window._tvq = window._tvq || [];
     (function() {
