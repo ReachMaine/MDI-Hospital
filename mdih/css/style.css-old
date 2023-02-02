@@ -240,10 +240,6 @@ h3.mdih-box_title {
 .gform_wrapper form .gform_title {
   font-size: 2em; }
 
-.gform_wrapper.mdih-blue-bkg_wrapper {
-  background-color: #CEE4EE;
-  padding: 10px 20px; }
-
 .gf_page_steps .gf_step_active span.gf_step_label {
   border-bottom: 2px solid #78B3D0;
   font-size: larger; }
@@ -757,5 +753,3 @@ dl.eai-edu {
   nav.main-nav-container {
     margin-top: 37px; } }
 /* ---------- End Media styling ------------------------------------------ */
-
-/*# sourceMappingURL=style.css.map */
